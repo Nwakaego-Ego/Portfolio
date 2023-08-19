@@ -10,6 +10,13 @@ module.exports = {
       fontFamily: {
         burtons: "burtons",
       },
+      colors: {
+        darkBlue: "#0026C2",
+        lightBlue: "#4E96E1",
+        veryDarkBlue: "#010C48",
+        normalBlue: "#251AE0",
+      },
+      spacing: { "300px": "300px", "500px": "500px" },
     },
   },
   plugins: [],
