@@ -23,13 +23,13 @@ const header = () => {
             </li>
           </ul>
         </nav>
-        <div className="lg:flex lg:justify-between text-center py-6">
-          <div>
-            <h1 className="text-4xl py-3 text-gray-200 font-bold">
-              Nwaekpe Ego
+        <div className="lg:flex lg:justify-between text-center py-6 lg:px-20 lg:py-20 ">
+          <div className="">
+            <h1 className="text-4xl py-3 text-gray-200 font-bold lg:w-full ">
+              Nwaekpe Nwakaego <span className="hidden md:block">Glory</span>
             </h1>
             <h2 className="text-xl font-medium mb-5 text-gray-300">
-              Developer and designer
+              Frontend Developer
             </h2>
 
             <Image
@@ -44,12 +44,17 @@ const header = () => {
             />
           </div>
           <div>
-            <p className="flex leading-6 text-gray-300 mt-5 lg:justify-end lg:w-80">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and lets get cracking, Freelancer
-              providing services for programming and design content needs. Join
-              me down below and lets get cracking
-            </p>
+            <div className="lg:max-w-full lg:py-6 lg:px-6 lg:h-48 lg:bg-white lg:shadow-2xl lg:rounded-lg  lg:hover:bg-normalBlue lg:hover:text-white lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:scale-105 lg:mt-20">
+              <p className="flex leading-6 text-white lg:text-normalBlue mt-5 lg:justify-end lg:w-80 lg:pb-6   hover:text-white">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+              </p>
+            </div>
+            <button className="bg-white hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-500 text-normalBlue font-bold py-2 px-4 rounded m-8">
+              Click to Hire Me
+            </button>
           </div>
         </div>
       </div>
