@@ -2,8 +2,10 @@ import { FaReact } from "react-icons/fa";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import Image from "next/image";
+import { useState } from "react";
 
 const header = () => {
+  const [currentMode, setCurrentMode] = useState;
   return (
     <main>
       <div className="bg-veryDarkBlue px-10 py-10 font-burtons">
@@ -11,7 +13,10 @@ const header = () => {
           <p className="text-xl text-white font-semibold">Nwakaego</p>
           <ul className="flex items-center">
             <li>
-              <FaMoon color="black" className="text-2xl cursor-pointer" />
+              <button>
+                {" "}
+                <FaMoon color="black" className="text-2xl cursor-pointer" />
+              </button>
             </li>
             <li>
               <a
@@ -33,7 +38,7 @@ const header = () => {
             </h2>
 
             <Image
-              src="/engineer.svg"
+              src="/Ego.jpg"
               alt="Note Image"
               width={300}
               height={200}
@@ -44,7 +49,7 @@ const header = () => {
             />
           </div>
           <div>
-            <div className="lg:max-w-full lg:py-6 lg:px-6 lg:h-48 lg:bg-white lg:shadow-2xl lg:rounded-lg  lg:hover:bg-normalBlue lg:hover:text-white lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:scale-105 lg:mt-20">
+            <div className="lg:max-w-full lg:py-6 lg:px-6 lg:h-48 lg:bg-white shadow-2xl  lg:shadow-2xl lg:rounded-lg  lg:hover:bg-normalBlue lg:hover:text-white lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:scale-105 lg:mt-20">
               <p className="flex leading-6 text-white lg:text-normalBlue mt-5 lg:justify-end lg:w-80 lg:pb-6   hover:text-white">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -58,7 +63,7 @@ const header = () => {
           </div>
         </div>
       </div>
-      <div className="px-10 py-10 font-burtons">
+      <div className="px-10 py-10 font-burtons bg-veryLightBlue">
         <div className="flex gap-20 text-gray-500 text-3xl justify-center py-4">
           <FaTwitter />
           <FaLinkedin />
@@ -92,6 +97,126 @@ const header = () => {
           </p>
         </section>
       </div>
+      <section>
+        <div className="  text-center shadow-2xl rounded-lg  ">
+          <div className=" lg:flex m-10">
+            <div className="shadow-2xl  lg:m-5 rounded-lg ">
+              <div className=" flex justify-center items-center ">
+                <Image
+                  src="/note.jpg"
+                  alt="Note Image"
+                  width={300}
+                  height={200}
+                  className="mt-10 "
+                />
+              </div>
+              <div className="mt-10">
+                <h2 className="justify-center my-2 text-darkBlue ">
+                  Note Project
+                </h2>
+                <p className="text-sm text-gray-500">
+                  down below and lets get cracking Join me down below and lets
+                  get cracking, Freelancer providing
+                </p>
+                <div className="mt-2">
+                  <a
+                    href="/"
+                    class="text-darkBlue hover:opacity-70 underline font-bold text-lg"
+                  >
+                    Link
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="shadow-2xl  lg:m-5 rounded-lg">
+              <div className=" flex justify-center items-center ">
+                <Image
+                  src="/weath.jpg"
+                  alt="Note Image"
+                  width={300}
+                  height={200}
+                  className="mt-10 "
+                />
+              </div>
+              <div className="mt-10">
+                <h2 className="justify-center my-2 text-darkBlue ">
+                  Weather Project
+                </h2>
+                <p className="text-sm text-gray-500">
+                  down below and lets get cracking Join me down below and lets
+                  get cracking, Freelancer providing
+                </p>
+                <div className="mt-2">
+                  <a
+                    href="/"
+                    class="text-darkBlue hover:opacity-70 underline font-bold text-lg"
+                  >
+                    Link
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className=" lg:flex">
+            <div className="shadow-2xl lg:m-5 rounded-lg">
+              <div className=" flex justify-center items-center ">
+                <Image
+                  src="/dir.jpg"
+                  alt="Note Image"
+                  width={300}
+                  height={200}
+                  className="mt-10 "
+                />
+              </div>
+              <div className="mt-10">
+                <h2 className="justify-center my-2 text-darkBlue ">
+                  Pidgin Project
+                </h2>
+                <p className="text-sm text-gray-500">
+                  down below and lets get cracking Join me down below and lets
+                  get cracking, Freelancer providing
+                </p>
+                <div className="mt-2">
+                  <a
+                    href="/"
+                    class="text-darkBlue hover:opacity-70 underline font-bold text-lg"
+                  >
+                    Link
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="shadow-2xl lg:m-5 rounded-lg">
+              <div className=" flex justify-center items-center ">
+                <Image
+                  src="/note_.jpg"
+                  alt="Note Image"
+                  width={300}
+                  height={200}
+                  className="mt-10 "
+                />
+              </div>
+              <div className="mt-10">
+                <h2 className="justify-center my-2 text-darkBlue ">
+                  Note Project
+                </h2>
+                <p className="text-sm text-gray-500">
+                  down below and lets get cracking Join me down below and lets
+                  get cracking, Freelancer providing
+                </p>
+                <div className="mt-2">
+                  <a
+                    href="/"
+                    class="text-darkBlue hover:opacity-70 underline font-bold text-lg"
+                  >
+                    Link
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
