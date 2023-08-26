@@ -1,3 +1,4 @@
+"use client";
 import { FaReact } from "react-icons/fa";
 import { FaSun, FaMoon } from "react-icons/fa";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
@@ -5,18 +6,35 @@ import Image from "next/image";
 import { useState } from "react";
 
 const header = () => {
-  const [currentMode, setCurrentMode] = useState;
+  const [currentMode, setCurrentMode] = useState();
+
+  const setDarkMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "dark");
+    setCurrentMode("dark");
+  };
+
+  const setLightMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "light");
+    setCurrentMode("light");
+  };
+
+  const toggleButton = (event) => {
+    if (currentMode === "dark") {
+      setLightMode();
+    } else {
+      setDarkMode();
+    }
+  };
+
   return (
     <main>
-      <div className="bg-veryDarkBlue px-10 py-10 font-burtons">
+      <div className=" bg-veryDarkBlue px-10 py-10 font-burtons ">
         <nav className=" mb-12 flex justify-between">
           <p className="text-xl text-white font-semibold">Nwakaego</p>
           <ul className="flex items-center">
-            <li>
-              <button>
-                {" "}
-                <FaMoon color="black" className="text-2xl cursor-pointer" />
-              </button>
+            <li onClick={toggleButton}>
+              <FaMoon color="black" className="text-2xl cursor-pointer" />
+              {/* {currentMode === "setLightMode" ? "setDarkMode" : "setLightMode"} */}
             </li>
             <li>
               <a
@@ -63,39 +81,48 @@ const header = () => {
           </div>
         </div>
       </div>
-      <div className="px-10 py-10 font-burtons bg-veryLightBlue">
-        <div className="flex gap-20 text-gray-500 text-3xl justify-center py-4">
-          <FaTwitter />
-          <FaLinkedin />
-          <FaGithub />
-        </div>
-        <div
-          className=" relative bg-gradient-to-b
+      <div className=" lg:flex    lg:justify-between text-center py-6 lg:px-40 lg:py-20      font-burtons bg-veryLightBlue">
+        <div className="lg:mt-32">
+          <div className="flex gap-20 text-gray-500 text-3xl justify-center py-4">
+            <FaTwitter />
+            <FaLinkedin />
+            <FaGithub />
+          </div>
+          <div
+            className=" relative bg-gradient-to-b
         from-darkBlue mt-8 mx-auto rounded-full w-60 h-60 overflow-hidden"
-        >
-          <Image
-            src="/engineer.svg"
-            alt="Note Image"
-            width={300}
-            height={200}
-            layout="fit"
-            objectFit="cover"
-            className="mt-10"
-          />
+          >
+            <Image
+              src="/engineer.svg"
+              alt="Note Image"
+              width={300}
+              height={200}
+              layout="fit"
+              objectFit="cover"
+              className="mt-10"
+            />
+          </div>
         </div>
-        <section className=" leading-6 text-gray-500 mt-8 text-center ">
-          <p className="text-black font-bold">Services I Offer</p>
-          Freelancer providing services for{" "}
-          <span className="text-lightBlue">programming </span>and design content
-          needs. Join me down below and lets get cracking, Freelancer providing
-          services for programming and{" "}
-          <span className="text-lightBlue">design</span> content needs. Join me
-          down below and lets get cracking Join me down below and lets get
-          cracking, Freelancer providing
-          <p>
-            Freelancer providing services for programming and design content
+        <div className=" lg:rounded-lg lg:bg-darkBlue shadow-2xl   text-gray-500 mt-8 text-center ">
+          <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10 lg:w-52">
+            HTLM
           </p>
-        </section>
+          <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10">
+            CSS
+          </p>
+          <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10">
+            JAVASCRIPT
+          </p>
+          <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10">
+            REACT
+          </p>
+          <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10">
+            NEXT JS
+          </p>
+          <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10 mb-10">
+            TAILWIND
+          </p>
+        </div>
       </div>
       <section>
         <div className="  text-center shadow-2xl rounded-lg  ">
