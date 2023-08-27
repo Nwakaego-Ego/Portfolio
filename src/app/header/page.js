@@ -8,12 +8,26 @@ import { useState } from "react";
 const header = () => {
   const [currentMode, setCurrentMode] = useState();
 
+  const setHeroBg = (bgColor) => {
+    const herobg = document.querySelector(".hero");
+    herobg.style.backgroundColor = bgColor;
+  };
+
+  const setSkillsBg = (bgColor) => {
+    const heroSkillsBg = document.querySelector(".skills");
+    heroSkillsBg.style.backgroundColor = bgColor;
+  };
+
   const setDarkMode = () => {
+    setHeroBg("transparent");
+    setSkillsBg("transparent");
     document.querySelector("body").setAttribute("data-theme", "dark");
     setCurrentMode("dark");
   };
-
+  // #F3F5FE
   const setLightMode = () => {
+    setHeroBg("#010C48");
+    setSkillsBg("#F3F5FE");
     document.querySelector("body").setAttribute("data-theme", "light");
     setCurrentMode("light");
   };
@@ -28,13 +42,17 @@ const header = () => {
 
   return (
     <main>
-      <div className=" bg-veryDarkBlue px-10 py-10 font-burtons ">
+      <div className="hero bg-veryDarkBlue px-10 py-10 font-burtons ">
         <nav className=" mb-12 flex justify-between">
           <p className="text-xl text-white font-semibold">Nwakaego</p>
           <ul className="flex items-center">
             <li onClick={toggleButton}>
-              <FaMoon color="black" className="text-2xl cursor-pointer" />
-              {/* {currentMode === "setLightMode" ? "setDarkMode" : "setLightMode"} */}
+              {/* <FaMoon color="black" className="text-2xl cursor-pointer" /> */}
+              {currentMode === "dark" ? (
+                <FaMoon className="h-6 w-6 text-white text-2xl cursor-pointer" />
+              ) : (
+                <FaSun className="h-6 w-6 text-black " />
+              )}
             </li>
             <li>
               <a
@@ -46,10 +64,11 @@ const header = () => {
             </li>
           </ul>
         </nav>
-        <div className="lg:flex lg:justify-between text-center py-6 lg:px-20 lg:py-20 ">
+        <div className="lg:flex  lg:justify-between text-center py-6 lg:px-20 lg:py-20 ">
           <div className="">
-            <h1 className="text-4xl py-3 text-gray-200 font-bold lg:w-full ">
-              Nwaekpe Nwakaego <span className="hidden md:block">Glory</span>
+            <h1 className="text-4xl  py-3 text-gray-200 font-bold lg:w-full ">
+              Nwaekpe Nwakaego{" "}
+              <span className="hidden md:inline-block">Glory</span>
             </h1>
             <h2 className="text-xl font-medium mb-5 text-gray-300">
               Frontend Developer
@@ -68,7 +87,7 @@ const header = () => {
           </div>
           <div>
             <div className="lg:max-w-full lg:py-6 lg:px-6 lg:h-48 lg:bg-white shadow-2xl  lg:shadow-2xl lg:rounded-lg  lg:hover:bg-normalBlue lg:hover:text-white lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:scale-105 lg:mt-20">
-              <p className="flex leading-6 text-white lg:text-normalBlue mt-5 lg:justify-end lg:w-80 lg:pb-6   hover:text-white">
+              <p className="flex leading-6 text-white lg:text-normalBlue mt-5 lg:justify-end lg:w-80 lg:pb-6 hover:bg-normalBlue  hover:text-white">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 quae ab illo inventore veritatis et quasi architecto beatae
@@ -81,7 +100,7 @@ const header = () => {
           </div>
         </div>
       </div>
-      <div className=" lg:flex    lg:justify-between text-center py-6 lg:px-40 lg:py-20      font-burtons bg-veryLightBlue">
+      <div className="skills lg:flex lg:justify-between text-center py-6 lg:px-40 lg:py-20  font-burtons bg-lightBlueBlue">
         <div className="lg:mt-32">
           <div className="flex gap-20 text-gray-500 text-3xl justify-center py-4">
             <FaTwitter />
@@ -105,7 +124,7 @@ const header = () => {
         </div>
         <div className=" lg:rounded-lg lg:bg-darkBlue shadow-2xl   text-gray-500 mt-8 text-center ">
           <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10 lg:w-52">
-            HTLM
+            HTML
           </p>
           <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10">
             CSS
@@ -244,6 +263,45 @@ const header = () => {
           </div>
         </div>
       </section>
+
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="container mx-auto text-center">
+          <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
+          <p className="mb-6">Have a project in mind? Let's collaborate!</p>
+          <a
+            href="mailto:contact@example.com"
+            className="text-blue-500 hover:text-blue-300 transition duration-300"
+          >
+            contact@example.com
+          </a>
+          <div className="mt-4">
+            <a
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-300 transition duration-300 mx-2"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-300 transition duration-300 mx-2"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://twitter.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-300 transition duration-300 mx-2"
+            >
+              Twitter
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 };
