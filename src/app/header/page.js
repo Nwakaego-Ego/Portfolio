@@ -24,7 +24,7 @@ const header = () => {
     document.querySelector("body").setAttribute("data-theme", "dark");
     setCurrentMode("dark");
   };
-  // #F3F5FE
+
   const setLightMode = () => {
     setHeroBg("#010C48");
     setSkillsBg("#F3F5FE");
@@ -40,11 +40,20 @@ const header = () => {
     }
   };
 
+  const techStack = [
+    "HTML",
+    "CSS",
+    "JAVASCRIPT",
+    "REACT",
+    "NEXTJS",
+    "TAILWIND",
+  ];
+
   return (
     <main>
-      <div className="hero bg-veryDarkBlue px-10 py-10 font-burtons ">
-        <nav className=" mb-12 flex justify-between">
-          <p className="text-xl text-white font-semibold">Nwakaego</p>
+      <div className="hero bg-veryDarkBlue  font-burtons ">
+        <nav className=" mb-12 flex justify-between fixed w-full bg-blur p-8 shadow-2xl z-10">
+          <p className="text-xl text-darkBlue font-semibold ">Nwakaego</p>
           <ul className="flex items-center">
             <li onClick={toggleButton}>
               {/* <FaMoon color="black" className="text-2xl cursor-pointer" /> */}
@@ -66,7 +75,7 @@ const header = () => {
         </nav>
         <div className="lg:flex  lg:justify-between text-center py-6 lg:px-20 lg:py-20 ">
           <div className="">
-            <h1 className="text-4xl  py-3 text-gray-200 font-bold lg:w-full ">
+            <h1 className="text-4xl  py-3 text-gray-200 font-bold lg:w-full mt-20">
               Nwaekpe Nwakaego{" "}
               <span className="hidden md:inline-block">Glory</span>
             </h1>
@@ -122,26 +131,16 @@ const header = () => {
             />
           </div>
         </div>
-        <div className=" lg:rounded-lg lg:bg-darkBlue shadow-2xl   text-gray-500 mt-8 text-center ">
-          <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10 lg:w-52">
-            HTML
-          </p>
-          <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10">
-            CSS
-          </p>
-          <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10">
-            JAVASCRIPT
-          </p>
-          <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10">
-            REACT
-          </p>
-          <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10">
-            NEXT JS
-          </p>
-          <p className="rounded-lg  mx-20 h-10 bg-white shadow-2xl  hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 mt-10 mb-10">
-            TAILWIND
-          </p>
-        </div>
+
+        {techStack.map((stack, index) => {
+          return (
+            <div className="w-full flex items-center justify-center text-center shadow-2xl rounded-lg bg-red-600 mt-10 ">
+              <ul key={index}>
+                <li>{stack}</li>
+              </ul>
+            </div>
+          );
+        })}
       </div>
       <section>
         <div className="  text-center shadow-2xl rounded-lg  ">
@@ -264,7 +263,7 @@ const header = () => {
         </div>
       </section>
 
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-veryDarkBlue text-white py-8">
         <div className="container mx-auto text-center">
           <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
           <p className="mb-6">Have a project in mind? Let's collaborate!</p>
@@ -276,7 +275,7 @@ const header = () => {
           </a>
           <div className="mt-4">
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/glory-nwaekpe/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-300 transition duration-300 mx-2"
@@ -284,7 +283,7 @@ const header = () => {
               LinkedIn
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Nwakaego-Ego"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-300 transition duration-300 mx-2"
@@ -292,7 +291,7 @@ const header = () => {
               GitHub
             </a>
             <a
-              href="https://twitter.com/yourusername"
+              href="https://twitter.com/GloryNwaekpe"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-300 transition duration-300 mx-2"

@@ -16,6 +16,7 @@ module.exports = {
         veryDarkBlue: "#010C48",
         normalBlue: "#251AE0",
         veryLightBlue: "#F3F5FE",
+        blur: "#DDE8FF",
       },
       spacing: { "300px": "300px", "500px": "500px" },
     },
