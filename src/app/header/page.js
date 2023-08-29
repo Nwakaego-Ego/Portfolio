@@ -63,10 +63,10 @@ const header = () => {
                 <FaSun className="h-6 w-6 text-black " />
               )}
             </li>
-            <li>
+            <li className="hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105s">
               <a
                 href="#"
-                className=" bg-gradient-to-r from-normalBlue to-normalBlue text-white px-2 py-2 rounded ml-5 md:ml-8"
+                className=" bg-gradient-to-r from-normalBlue to-normalBlue text-white px-2 py-2 rounded ml-5 md:ml-8  "
               >
                 RESUME
               </a>
@@ -103,13 +103,13 @@ const header = () => {
                 vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
               </p>
             </div>
-            <button className="bg-white hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-500 text-normalBlue font-bold py-2 px-4 rounded m-8">
+            <button className="bg-white hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105  text-normalBlue font-bold py-2 px-4 rounded m-8">
               Click to Hire Me
             </button>
           </div>
         </div>
       </div>
-      <div className="skills lg:flex lg:justify-between text-center py-6 lg:px-40 lg:py-20  font-burtons bg-lightBlueBlue">
+      <div className="skills lg:flex lg:justify-between text-center py-6 lg:px-40 lg:py-20  font-burtons  bg-veryLightBlue">
         <div className="lg:mt-32">
           <div className="flex gap-20 text-gray-500 text-3xl justify-center py-4">
             <FaTwitter />
@@ -131,21 +131,25 @@ const header = () => {
             />
           </div>
         </div>
-
-        {techStack.map((stack, index) => {
-          return (
-            <div className="w-full flex items-center justify-center text-center shadow-2xl rounded-lg bg-red-600 mt-10 ">
-              <ul key={index}>
-                <li>{stack}</li>
-              </ul>
-            </div>
-          );
-        })}
+        <div>
+          {techStack.map((stack, index) => {
+            return (
+              <div
+                className="mx-20 lg:w-52 cursor-pointer h-10 flex flex-row text-black  items-center justify-center text-center shadow-2xl rounded-lg bg-white mt-10   hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105"
+                key={index}
+              >
+                <ul>
+                  <li>{stack}</li>
+                </ul>
+              </div>
+            );
+          })}
+        </div>
       </div>
       <section>
         <div className="  text-center shadow-2xl rounded-lg  ">
           <div className=" lg:flex m-10">
-            <div className="shadow-2xl  lg:m-5 rounded-lg ">
+            <div className="shadow-2xl  lg:m-5 rounded-3xl ">
               <div className=" flex justify-center items-center ">
                 <Image
                   src="/note.jpg"
@@ -155,25 +159,25 @@ const header = () => {
                   className="mt-10 "
                 />
               </div>
-              <div className="mt-10">
-                <h2 className="justify-center my-2 text-darkBlue ">
+              <div className="mt-10 bg-darkBlue rounded-b-2xl">
+                <h2 className="justify-center my-2 text-white   ">
                   Note Project
                 </h2>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-gray-300">
                   down below and lets get cracking Join me down below and lets
                   get cracking, Freelancer providing
                 </p>
                 <div className="mt-2">
                   <a
                     href="/"
-                    class="text-darkBlue hover:opacity-70 underline font-bold text-lg"
+                    class="text-white hover:opacity-70 underline font-bold text-lg"
                   >
                     Link
                   </a>
                 </div>
               </div>
             </div>
-            <div className="shadow-2xl  lg:m-5 rounded-lg">
+            <div className="shadow-2xl  lg:m-5 mt-10 rounded-lg">
               <div className=" flex justify-center items-center ">
                 <Image
                   src="/weath.jpg"
@@ -183,18 +187,18 @@ const header = () => {
                   className="mt-10 "
                 />
               </div>
-              <div className="mt-10">
-                <h2 className="justify-center my-2 text-darkBlue ">
+              <div className="mt-10  bg-darkBlue rounded-b-2xl">
+                <h2 className="justify-center my-2 text-white ">
                   Weather Project
                 </h2>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-gray-300">
                   down below and lets get cracking Join me down below and lets
                   get cracking, Freelancer providing
                 </p>
                 <div className="mt-2">
                   <a
                     href="/"
-                    class="text-darkBlue hover:opacity-70 underline font-bold text-lg"
+                    class="text-white hover:opacity-70 underline font-bold text-lg"
                   >
                     Link
                   </a>
@@ -203,7 +207,7 @@ const header = () => {
             </div>
           </div>
           <div className=" lg:flex">
-            <div className="shadow-2xl lg:m-5 rounded-lg">
+            <div className="shadow-2xl lg:m-5 m-8 rounded-lg">
               <div className=" flex justify-center items-center ">
                 <Image
                   src="/dir.jpg"
@@ -213,25 +217,25 @@ const header = () => {
                   className="mt-10 "
                 />
               </div>
-              <div className="mt-10">
-                <h2 className="justify-center my-2 text-darkBlue ">
+              <div className="mt-10  bg-darkBlue rounded-b-2xl">
+                <h2 className="justify-center my-2 text-white ">
                   Pidgin Project
                 </h2>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-gray-300">
                   down below and lets get cracking Join me down below and lets
                   get cracking, Freelancer providing
                 </p>
                 <div className="mt-2">
                   <a
                     href="/"
-                    class="text-darkBlue hover:opacity-70 underline font-bold text-lg"
+                    class="text-white hover:opacity-70 underline font-bold text-lg"
                   >
                     Link
                   </a>
                 </div>
               </div>
             </div>
-            <div className="shadow-2xl lg:m-5 rounded-lg">
+            <div className="shadow-2xl lg:m-5 m-8 rounded-lg">
               <div className=" flex justify-center items-center ">
                 <Image
                   src="/note_.jpg"
@@ -241,18 +245,18 @@ const header = () => {
                   className="mt-10 "
                 />
               </div>
-              <div className="mt-10">
-                <h2 className="justify-center my-2 text-darkBlue ">
+              <div className="mt-10  bg-darkBlue rounded-b-2xl">
+                <h2 className="justify-center my-2 text-white ">
                   Note Project
                 </h2>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-gray-300">
                   down below and lets get cracking Join me down below and lets
                   get cracking, Freelancer providing
                 </p>
                 <div className="mt-2">
                   <a
                     href="/"
-                    class="text-darkBlue hover:opacity-70 underline font-bold text-lg"
+                    class="text-white hover:opacity-70 underline font-bold text-lg"
                   >
                     Link
                   </a>
