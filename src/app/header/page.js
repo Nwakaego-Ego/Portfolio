@@ -4,6 +4,7 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 const header = () => {
   const [currentMode, setCurrentMode] = useState();
@@ -53,7 +54,9 @@ const header = () => {
     <main>
       <div className="hero bg-veryDarkBlue  font-burtons ">
         <nav className=" mb-12 flex justify-between fixed w-full bg-blur p-8 shadow-2xl z-10">
-          <p className="text-xl text-darkBlue font-semibold ">Nwakaego</p>
+          <Link href="/header">
+            <p className="text-xl text-darkBlue font-semibold ">Nwakaego</p>
+          </Link>
           <ul className="flex items-center">
             <li onClick={toggleButton}>
               {/* <FaMoon color="black" className="text-2xl cursor-pointer" /> */}
@@ -63,12 +66,15 @@ const header = () => {
                 <FaSun className="h-6 w-6 text-black " />
               )}
             </li>
-            <li className="hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105s">
+            <li className=" ">
               <a
-                href="#"
-                className=" bg-gradient-to-r from-normalBlue to-normalBlue text-white px-2 py-2 rounded ml-5 md:ml-8  "
+                href="https://ego.hashnode.dev/?source=top_nav_blog_home"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" bg-normalBlue text-white btn hover:bg-white hover:text-normalBlue transform transition
+                hover:scale-105 px-2 py-2 rounded ml-5"
               >
-                RESUME
+                BLOG
               </a>
             </li>
           </ul>
@@ -80,7 +86,7 @@ const header = () => {
               <span className="hidden md:inline-block">Glory</span>
             </h1>
             <h2 className="text-xl font-medium mb-5 text-gray-300">
-              Frontend Developer
+              Frontend Developer and Writer
             </h2>
 
             <Image
@@ -95,7 +101,7 @@ const header = () => {
             />
           </div>
           <div>
-            <div className="lg:max-w-full lg:py-6 lg:px-6 lg:h-48 lg:bg-white shadow-2xl  lg:shadow-2xl lg:rounded-lg  lg:hover:bg-normalBlue lg:hover:text-white lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:scale-105 lg:mt-20">
+            <div className="lg:max-w-full lg:py-6 lg:px-6 lg:h-48 lg:bg-white shadow-2xl  lg:shadow-2xl lg:rounded-lg  lg:hover:bg-normalBlue lg:hover:text-white lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:scale-105 lg:mt-52">
               <p className="flex leading-6 text-white lg:text-normalBlue mt-5 lg:justify-end lg:w-80 lg:pb-6 hover:bg-normalBlue  hover:text-white">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -103,18 +109,39 @@ const header = () => {
                 vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
               </p>
             </div>
-            <button className="bg-white hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105  text-normalBlue font-bold py-2 px-4 rounded m-8">
+            <button className="bg-white hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105  text-normalBlue font-bold py-2 px-4 rounded m-10">
               Click to Hire Me
             </button>
           </div>
         </div>
       </div>
-      <div className="skills lg:flex lg:justify-between text-center py-6 lg:px-40 lg:py-20  font-burtons  bg-veryLightBlue">
-        <div className="lg:mt-32">
+      <div className="skills lg:flex lg:justify-between text-center py-6 lg:px-40 lg:py-10  font-burtons  bg-veryLightBlue">
+        <div className="lg:mt-20">
           <div className="flex gap-20 text-gray-500 text-3xl justify-center py-4">
-            <FaTwitter />
-            <FaLinkedin />
-            <FaGithub />
+            <a
+              href="https://twitter.com/GloryNwaekpe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/glory-nwaekpe/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com/Nwakaego-Ego"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
+              <FaGithub />
+            </a>
           </div>
           <div
             className=" relative bg-gradient-to-b
@@ -152,7 +179,7 @@ const header = () => {
             <div className="shadow-2xl  lg:m-5 rounded-3xl ">
               <div className=" flex justify-center items-center ">
                 <Image
-                  src="/note.jpg"
+                  src="/note_.svg"
                   alt="Note Image"
                   width={300}
                   height={200}
@@ -169,8 +196,10 @@ const header = () => {
                 </p>
                 <div className="mt-2">
                   <a
-                    href="/"
-                    class="text-white hover:opacity-70 underline font-bold text-lg"
+                    href="https://luminous-travesseiro-93a1d7.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-white hover:opacity-70 underline font-bold text-lg cursor-pointer"
                   >
                     Link
                   </a>
@@ -180,7 +209,7 @@ const header = () => {
             <div className="shadow-2xl  lg:m-5 mt-10 rounded-lg">
               <div className=" flex justify-center items-center ">
                 <Image
-                  src="/weath.jpg"
+                  src="/weath.svg"
                   alt="Note Image"
                   width={300}
                   height={200}
@@ -197,8 +226,10 @@ const header = () => {
                 </p>
                 <div className="mt-2">
                   <a
-                    href="/"
-                    class="text-white hover:opacity-70 underline font-bold text-lg"
+                    href="https://fabulous-gnome-dc91ba.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-white hover:opacity-70 underline font-bold text-lg cursor-pointer"
                   >
                     Link
                   </a>
@@ -210,7 +241,7 @@ const header = () => {
             <div className="shadow-2xl lg:m-5 m-8 rounded-lg">
               <div className=" flex justify-center items-center ">
                 <Image
-                  src="/dir.jpg"
+                  src="/dir.svg"
                   alt="Note Image"
                   width={300}
                   height={200}
@@ -227,7 +258,9 @@ const header = () => {
                 </p>
                 <div className="mt-2">
                   <a
-                    href="/"
+                    href="https://velvety-sable-9ec5c6.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="text-white hover:opacity-70 underline font-bold text-lg"
                   >
                     Link
@@ -238,7 +271,7 @@ const header = () => {
             <div className="shadow-2xl lg:m-5 m-8 rounded-lg">
               <div className=" flex justify-center items-center ">
                 <Image
-                  src="/note_.jpg"
+                  src="/blog.svg"
                   alt="Note Image"
                   width={300}
                   height={200}
@@ -246,9 +279,7 @@ const header = () => {
                 />
               </div>
               <div className="mt-10  bg-darkBlue rounded-b-2xl">
-                <h2 className="justify-center my-2 text-white ">
-                  Note Project
-                </h2>
+                <h2 className="justify-center my-2 text-white ">Blog Posts</h2>
                 <p className="text-sm text-gray-300">
                   down below and lets get cracking Join me down below and lets
                   get cracking, Freelancer providing
@@ -272,10 +303,10 @@ const header = () => {
           <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
           <p className="mb-6">Have a project in mind? Let's collaborate!</p>
           <a
-            href="mailto:contact@example.com"
+            href="mailto:glorynwaekpe@gmail.com"
             className="text-blue-500 hover:text-blue-300 transition duration-300"
           >
-            contact@example.com
+            glorynwaekpe@gmail.com
           </a>
           <div className="mt-4">
             <a
