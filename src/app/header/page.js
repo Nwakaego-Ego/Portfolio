@@ -103,10 +103,10 @@ const header = () => {
           <div>
             <div className="lg:max-w-full lg:py-6 lg:px-6 lg:h-48 lg:bg-white shadow-2xl  lg:shadow-2xl lg:rounded-lg  lg:hover:bg-normalBlue lg:hover:text-white lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:scale-105 lg:mt-52">
               <p className="flex leading-6 text-white lg:text-normalBlue mt-5 lg:justify-end lg:w-80 lg:pb-6 hover:bg-normalBlue  hover:text-white">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                I'm a junior front-end developer and writer, blending code and
+                words to create compelling digital experiences. With a passion
+                for storytelling, I bring creativity and functionality to the
+                web.
               </p>
             </div>
             <button className="bg-white hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105  text-normalBlue font-bold py-2 px-4 rounded m-10">
@@ -176,7 +176,7 @@ const header = () => {
       <section>
         <div className="  text-center shadow-2xl rounded-lg  ">
           <div className=" lg:flex m-10">
-            <div className="shadow-2xl  lg:m-5 rounded-3xl ">
+            <div className="shadow-2xl  lg:m-5 rounded-3xl max-w-xl">
               <div className=" flex justify-center items-center ">
                 <Image
                   src="/note_.svg"
@@ -191,8 +191,9 @@ const header = () => {
                   Note Project
                 </h2>
                 <p className="text-sm text-gray-300">
-                  down below and lets get cracking Join me down below and lets
-                  get cracking, Freelancer providing
+                  I created a note-taking app, streamlining organization and
+                  productivity by capturing and managing ideas with ease and
+                  efficiency.
                 </p>
                 <div className="mt-2">
                   <a
@@ -206,7 +207,7 @@ const header = () => {
                 </div>
               </div>
             </div>
-            <div className="shadow-2xl  lg:m-5 mt-10 rounded-lg">
+            <div className="shadow-2xl  lg:m-5 mt-10 rounded-lg max-w-xl">
               <div className=" flex justify-center items-center ">
                 <Image
                   src="/weath.svg"
@@ -221,8 +222,9 @@ const header = () => {
                   Weather Project
                 </h2>
                 <p className="text-sm text-gray-300">
-                  down below and lets get cracking Join me down below and lets
-                  get cracking, Freelancer providing
+                  I developed a weather project, offering real-time forecasts,
+                  enhancing user experience through accurate and accessible
+                  weather information.
                 </p>
                 <div className="mt-2">
                   <a
@@ -238,7 +240,7 @@ const header = () => {
             </div>
           </div>
           <div className=" lg:flex">
-            <div className="shadow-2xl lg:m-5 m-8 rounded-lg">
+            <div className="shadow-2xl lg:m-5 m-8 rounded-lg max-w-xl">
               <div className=" flex justify-center items-center ">
                 <Image
                   src="/dir.svg"
@@ -253,8 +255,9 @@ const header = () => {
                   Pidgin Project
                 </h2>
                 <p className="text-sm text-gray-300">
-                  down below and lets get cracking Join me down below and lets
-                  get cracking, Freelancer providing
+                  I designed a local slang directory, celebrating linguistic
+                  diversity and preserving community expressions for an
+                  authentic cultural experience.
                 </p>
                 <div className="mt-2">
                   <a
@@ -268,7 +271,7 @@ const header = () => {
                 </div>
               </div>
             </div>
-            <div className="shadow-2xl lg:m-5 m-8 rounded-lg">
+            <div className="shadow-2xl lg:m-5 m-8 rounded-lg max-w-xl">
               <div className=" flex justify-center items-center ">
                 <Image
                   src="/blog.svg"
@@ -281,8 +284,9 @@ const header = () => {
               <div className="mt-10  bg-darkBlue rounded-b-2xl">
                 <h2 className="justify-center my-2 text-white ">Blog Posts</h2>
                 <p className="text-sm text-gray-300">
-                  down below and lets get cracking Join me down below and lets
-                  get cracking, Freelancer providing
+                  I specialize in technical writing, simplifying complex
+                  concepts and making information accessible for clear and
+                  effective communication in various fields.
                 </p>
                 <div className="mt-2">
                   <a
