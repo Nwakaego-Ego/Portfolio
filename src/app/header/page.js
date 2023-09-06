@@ -110,7 +110,14 @@ const header = () => {
               </p>
             </div>
             <button className="bg-white hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105  text-normalBlue font-bold py-2 px-4 rounded m-10">
-              Click to Hire Me
+              <a
+                href="https://drive.google.com/file/d/1KVsW43K6QYqwHr2wCSQ3JhtkVxFhiMMj/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+              >
+                Click to Hire me
+              </a>
             </button>
           </div>
         </div>
