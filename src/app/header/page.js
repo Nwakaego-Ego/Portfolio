@@ -101,8 +101,8 @@ const header = () => {
             />
           </div>
           <div>
-            <div className="lg:max-w-full lg:py-6 lg:px-6 lg:h-48 lg:bg-white shadow-2xl  lg:shadow-2xl lg:rounded-lg  lg:hover:bg-normalBlue lg:hover:text-white lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:scale-105 lg:mt-52">
-              <p className="flex leading-6 text-white lg:text-normalBlue mt-5 lg:justify-end lg:w-80 lg:pb-6 hover:bg-normalBlue  hover:text-white">
+            <div className="lg:max-w-full lg:py-6 lg:px-6 lg:h-48 lg:bg-white shadow-2xl lg:rounded-lg group lg:hover:bg-normalBlue lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:scale-105 lg:mt-52">
+              <p className="flex leading-6 text-normalBlue mt-5 lg:justify-end lg:w-80 lg:pb-6  transition duration-300 ease-in-out group-hover:text-white">
                 I'm a junior front-end developer and writer, blending code and
                 words to create compelling digital experiences. With a passion
                 for storytelling, I bring creativity and functionality to the
