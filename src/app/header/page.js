@@ -81,11 +81,11 @@ const header = () => {
         </nav>
         <div className="lg:flex  lg:justify-between text-center py-6 lg:px-20 lg:py-20 ">
           <div className="">
-            <h1 className="text-4xl  py-3 text-gray-200 font-bold lg:w-full mt-20">
+            <h1 className="text-4xl  py-3 text-gray-200 font-bold lg:w-full mt-20 ">
               Nwaekpe Nwakaego{" "}
               <span className="hidden md:inline-block">Glory</span>
             </h1>
-            <h2 className="text-xl font-medium mb-5 text-gray-300">
+            <h2 className="text-xl font-medium mb-5 text-gray-300 animate-pulse">
               Frontend Developer and Writer
             </h2>
 
@@ -169,7 +169,7 @@ const header = () => {
           {techStack.map((stack, index) => {
             return (
               <div
-                className="mx-20 lg:w-52 cursor-pointer h-10 flex flex-row text-black  items-center justify-center text-center shadow-2xl rounded-lg bg-white mt-10   hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105"
+                className="mx-20 lg:w-52 cursor-pointer h-10 flex flex-row text-black  items-center justify-center text-center shadow-2xl rounded-lg bg-white mt-10   hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate-bounce"
                 key={index}
               >
                 <ul>
