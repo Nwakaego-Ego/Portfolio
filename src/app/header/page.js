@@ -5,9 +5,32 @@ import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
+import { TypeAnimation } from "react-type-animation";
 
 const header = () => {
   const [currentMode, setCurrentMode] = useState();
+  // const [repeat, setRepeat] = useState(2);
+
+  // const sequence = [
+  //   "Nwaekpe Glory Nwakaego",
+  //   1000,
+  //   "Frontend Developer",
+  //   1000,
+  //   "Technical Writer",
+  //   1000,
+  //   "Opensource Enthusiast",
+  //   1000,
+  // ];
+
+  // const handleSequenceEnd = () => {
+  //   if (repeat === 0) {
+
+  //     return sequence.join(" ");
+  //   } else {
+
+  //     setRepeat(repeat - 1);
+  //   }
+  // };
 
   const setHeroBg = (bgColor) => {
     const herobg = document.querySelector(".hero");
@@ -66,13 +89,13 @@ const header = () => {
                 <FaSun className="h-6 w-6 text-black " />
               )}
             </li>
-            <li className=" ">
+
+            <li className=" w-32  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold  px-8  py-2 rounded ml-5">
               <a
                 href="https://ego.hashnode.dev/?source=top_nav_blog_home"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" bg-normalBlue text-white btn hover:bg-white hover:text-normalBlue transform transition
-                hover:scale-105 px-2 py-2 rounded ml-5"
+                className="cursor-pointer"
               >
                 BLOG
               </a>
@@ -81,42 +104,60 @@ const header = () => {
         </nav>
         <div className="lg:flex  lg:justify-between text-center py-6 lg:px-20 lg:py-20 ">
           <div className="">
-            <h1 className="text-4xl  py-3 text-gray-200 font-bold lg:w-full mt-20 ">
-              Nwaekpe Nwakaego{" "}
-              <span className="hidden md:inline-block">Glory</span>
+            <h1 className="text-4xl  py-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-bold lg:w-full mt-20 ">
+              Hello 👋
+              {/* Hello 👋 I am Nwaekpe Glory Nwakaego{" "}
+              <span className="hidden md:inline-block">Glory</span> */}
+              <TypeAnimation
+                sequence={[
+                  "Nwaekpe Glory Nwakaego",
+                  1000,
+                  "Frontend Developer",
+                  1000,
+                  "Technical Writer",
+                  1000,
+                  "Opensource Enthusiast",
+                  1000,
+                ]}
+                speed={25} // Reduce the speed (adjust the value as needed)
+                style={{ fontSize: "1em", display: "block" }} // Reduce font size and change display to block
+                repeat={2} // Set repeat to 2 to loop twice on load
+              />
             </h1>
             <h2 className="text-xl font-medium mb-5 text-gray-300 animate-pulse">
-              Frontend Developer and Writer
+              {/* Frontend Developer and Writer */}
             </h2>
-
-            <Image
-              src="/Ego.jpg"
-              alt="Note Image"
-              width={300}
-              height={200}
-              layout="fit"
-              objectFit="cover"
-              className="    relative bg-gradient-to-b
-        from-darkBlue mt-8 mx-auto rounded-full w-60 h-60 lg:w-80 lg:h-80 overflow-hidden"
-            />
+            <div>
+              <div className="rounded-full bg-[#181818]  w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative mx-auto text-center">
+                <Image
+                  src="/anime.jpg"
+                  alt="Note Image"
+                  width={300}
+                  height={200}
+                  layout="fit"
+                  objectFit="cover"
+                  className="rounded-full w-44 h-44 lg:w-64 lg:h-64 border border-transparent absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                />
+              </div>
+            </div>
           </div>
           <div>
             <div className="lg:max-w-full lg:py-6 lg:px-6 lg:h-48 lg:bg-white shadow-2xl lg:rounded-lg group lg:hover:bg-normalBlue lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:scale-105 lg:mt-52">
-              <p className="flex leading-6 text-normalBlue mt-5 lg:justify-end lg:w-80 lg:pb-6  transition duration-300 ease-in-out group-hover:text-white">
+              <p className="flex leading-6 lg:text-normalBlue text-gray-400 mt-5 lg:justify-end lg:w-80 lg:pb-6  transition duration-300 ease-in-out group-hover:text-white">
                 I'm a junior front-end developer and writer, blending code and
                 words to create compelling digital experiences. With a passion
                 for storytelling, I bring creativity and functionality to the
                 web.
               </p>
             </div>
-            <button className="bg-white hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105  text-normalBlue font-bold py-2 px-4 rounded m-10">
+            <button className=" w-32  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded m-10">
               <a
                 href="https://drive.google.com/file/d/1cl-bca6iy1bZs-bv3sjmefBjFBD7gjYN/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cursor-pointer"
               >
-                Click to Hire me
+                Hire me
               </a>
             </button>
           </div>

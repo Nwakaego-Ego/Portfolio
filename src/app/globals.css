@@ -27,7 +27,8 @@ body {
 }
 
 [data-theme="dark"] {
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
+  background-color: black;
   color: #ffffff;
 }
 
