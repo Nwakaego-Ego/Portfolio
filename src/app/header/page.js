@@ -1,69 +1,11 @@
 "use client";
 import { FaReact } from "react-icons/fa";
-import { FaSun, FaMoon } from "react-icons/fa";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import Image from "next/image";
-import { useState } from "react";
-import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
+import Navbar from "../components/navbar";
 
 const header = () => {
-  const [currentMode, setCurrentMode] = useState();
-  // const [repeat, setRepeat] = useState(2);
-
-  // const sequence = [
-  //   "Nwaekpe Glory Nwakaego",
-  //   1000,
-  //   "Frontend Developer",
-  //   1000,
-  //   "Technical Writer",
-  //   1000,
-  //   "Opensource Enthusiast",
-  //   1000,
-  // ];
-
-  // const handleSequenceEnd = () => {
-  //   if (repeat === 0) {
-
-  //     return sequence.join(" ");
-  //   } else {
-
-  //     setRepeat(repeat - 1);
-  //   }
-  // };
-
-  const setHeroBg = (bgColor) => {
-    const herobg = document.querySelector(".hero");
-    herobg.style.backgroundColor = bgColor;
-  };
-
-  const setSkillsBg = (bgColor) => {
-    const heroSkillsBg = document.querySelector(".skills");
-    heroSkillsBg.style.backgroundColor = bgColor;
-  };
-
-  const setDarkMode = () => {
-    setHeroBg("transparent");
-    setSkillsBg("transparent");
-    document.querySelector("body").setAttribute("data-theme", "dark");
-    setCurrentMode("dark");
-  };
-
-  const setLightMode = () => {
-    setHeroBg("#010C48");
-    setSkillsBg("#F3F5FE");
-    document.querySelector("body").setAttribute("data-theme", "light");
-    setCurrentMode("light");
-  };
-
-  const toggleButton = (event) => {
-    if (currentMode === "dark") {
-      setLightMode();
-    } else {
-      setDarkMode();
-    }
-  };
-
   const techStack = [
     "HTML",
     "CSS",
@@ -76,81 +18,38 @@ const header = () => {
   return (
     <main>
       <div className="hero bg-veryDarkBlue  font-burtons ">
-        <nav className=" mb-12 flex justify-between fixed w-full bg-blur p-8 shadow-2xl z-10">
-          <Link href="/header">
-            <p className="text-xl text-darkBlue font-semibold ">Nwakaego</p>
-          </Link>
-          <ul className="flex items-center">
-            <li onClick={toggleButton}>
-              {/* <FaMoon color="black" className="text-2xl cursor-pointer" /> */}
-              {currentMode === "dark" ? (
-                <FaMoon className="h-6 w-6 text-white text-2xl cursor-pointer" />
-              ) : (
-                <FaSun className="h-6 w-6 text-black " />
-              )}
-            </li>
-
-            <li className=" w-32  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold  px-8  py-2 rounded ml-5">
-              <a
-                href="https://ego.hashnode.dev/?source=top_nav_blog_home"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cursor-pointer"
-              >
-                BLOG
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
         <div className="lg:flex  lg:justify-between text-center py-6 lg:px-20 lg:py-20 ">
           <div className="">
-            <h1 className="text-4xl  py-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-bold lg:w-full mt-20 ">
-              Hello 👋
-              {/* Hello 👋 I am Nwaekpe Glory Nwakaego{" "}
-              <span className="hidden md:inline-block">Glory</span> */}
-              <TypeAnimation
-                sequence={[
-                  "Nwaekpe Glory Nwakaego",
-                  1000,
-                  "Frontend Developer",
-                  1000,
-                  "Technical Writer",
-                  1000,
-                  "Opensource Enthusiast",
-                  1000,
-                ]}
-                speed={25} // Reduce the speed (adjust the value as needed)
-                style={{ fontSize: "1em", display: "block" }} // Reduce font size and change display to block
-                repeat={2} // Set repeat to 2 to loop twice on load
-              />
-            </h1>
-            <h2 className="text-xl font-medium mb-5 text-gray-300 animate-pulse">
-              {/* Frontend Developer and Writer */}
-            </h2>
-            <div>
-              <div className="rounded-full bg-[#181818]  w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative mx-auto text-center">
-                <Image
-                  src="/anime.jpg"
-                  alt="Note Image"
-                  width={300}
-                  height={200}
-                  layout="fit"
-                  objectFit="cover"
-                  className="rounded-full w-44 h-44 lg:w-64 lg:h-64 border border-transparent absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            <h1 className="text-4xl  py-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-bold lg:w-full mt-6 ">
+              Hello, I'm
+              <span className="">
+                <br />
+
+                <TypeAnimation
+                  sequence={[
+                    "Nwaekpe Glory Nwakaego",
+                    1000,
+                    "Frontend Developer",
+                    1000,
+                    "Technical Writer",
+                    1000,
+                    "Opensource Enthusiast",
+                    1000,
+                  ]}
+                  speed={25} // Reduce the speed (adjust the value as needed)
+                  // style={{ fontSize: "1em", display: "block" }} // Reduce font size and change display to block
+                  repeat={Infinity} // Set repeat to 2 to loop twice on load
+                  className=" block"
                 />
-              </div>
+              </span>
+            </h1>
+            <div>
+              I'm a junior front-end developer and writer, blending code
+              and...........
             </div>
-          </div>
-          <div>
-            <div className="lg:max-w-full lg:py-6 lg:px-6 lg:h-48 lg:bg-white shadow-2xl lg:rounded-lg group lg:hover:bg-normalBlue lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:scale-105 lg:mt-52">
-              <p className="flex leading-6 lg:text-normalBlue text-gray-400 mt-5 lg:justify-end lg:w-80 lg:pb-6  transition duration-300 ease-in-out group-hover:text-white">
-                I'm a junior front-end developer and writer, blending code and
-                words to create compelling digital experiences. With a passion
-                for storytelling, I bring creativity and functionality to the
-                web.
-              </p>
-            </div>
-            <button className=" w-32  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded m-10">
+            {/* <h2 className="text-xl font-medium mb-5 text-gray-300 animate-pulse"></h2> */}
+            <button className=" w-40  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg m-10">
               <a
                 href="https://drive.google.com/file/d/1cl-bca6iy1bZs-bv3sjmefBjFBD7gjYN/view?usp=drive_link"
                 target="_blank"
@@ -160,7 +59,36 @@ const header = () => {
                 Hire me
               </a>
             </button>
+            <button className=" w-40  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg m-10 ">
+              <a
+                href="https://drive.google.com/file/d/1cl-bca6iy1bZs-bv3sjmefBjFBD7gjYN/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+              >
+                Blog Post
+              </a>
+            </button>
           </div>
+          <div className="rounded-full   w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative mx-auto text-center">
+            <Image
+              src="/shee.png"
+              alt="Note Image"
+              width={300}
+              height={200}
+              layout="fit"
+              objectFit="cover"
+              className="rounded-full w-60 h-60 lg:w-64 lg:h-64 border border-transparent absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
+            />
+          </div>
+          {/* <div className="lg:max-w-full lg:py-6 lg:px-6 lg:h-48 lg:bg-white shadow-2xl lg:rounded-lg group lg:hover:bg-normalBlue lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:scale-105 lg:mt-52">
+              <p className="flex leading-6 lg:text-normalBlue text-gray-400 mt-5 lg:justify-end lg:w-80 lg:pb-6  transition duration-300 ease-in-out group-hover:text-white">
+                I'm a junior front-end developer and writer, blending code and
+                words to create compelling digital experiences. With a passion
+                for storytelling, I bring creativity and functionality to the
+                web.
+              </p>
+            </div> */}
         </div>
       </div>
       <div className="skills lg:flex lg:justify-between text-center py-6 lg:px-40 lg:py-10  font-burtons  bg-veryLightBlue">
