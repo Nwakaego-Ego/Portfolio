@@ -1,12 +1,32 @@
 "use client";
 import { FaReact } from "react-icons/fa";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { useState } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Navbar from "../components/navbar";
 
 const header = () => {
-  const techStack = [
+  // const [skills, setSkills] = useState([]);
+
+  // const skillStack = [
+  //   "HTML",
+  //   "CSS",
+  //   "JAVASCRIPT",
+  //   "REACT",
+  //   "NEXTJS",
+  //   "TAILWIND",
+  // ];
+
+  // const skill = () => {
+  //   const skillRoll = skillStack.map((professional, index) => {
+  //     return <div key={index}></div>;
+  //   });
+  //   setSkills(skillRoll);
+  // };
+
+  const [skills, setSkills] = useState([]);
+  const skillStack = [
     "HTML",
     "CSS",
     "JAVASCRIPT",
@@ -15,12 +35,19 @@ const header = () => {
     "TAILWIND",
   ];
 
+  const skill = () => {
+    const skillRoll = skillStack.map((professional, index) => (
+      <div key={index}>{professional}</div>
+    ));
+    setSkills(skillRoll);
+  };
+
   return (
     <main>
       <div className="hero bg-veryDarkBlue  font-burtons ">
         <Navbar />
         <div className="lg:flex  lg:justify-between text-center py-6 lg:px-20 lg:py-20 ">
-          <div className="mt-16">
+          <div className="mt-4">
             <h1 className="text-4xl  py-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-bold lg:w-full mt-6 ">
               Hello, I'm
               <span className="">
@@ -79,24 +106,16 @@ const header = () => {
                 height={200}
                 layout="fit"
                 objectFit="cover"
-                className="rounded-full w-60 h-60 lg:w-64 lg:h-64 border lg:ml-32  border-transparent absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
+                className="rounded-full w-60 h-30 lg:w-64 lg:h-64 border lg:ml-32  border-transparent absolute transform -translate-x-1/2 -translate-y-1/2 left-1/2 "
               />
             </div>
           </div>
         </div>
       </div>
-      <div
-        className="skills lg:flex lg:justify-between text-center py-6 lg:px-40 lg:py-10  font-burtons bg-veryDarkBlue h-[500px] In my journey through the world of open source, I have had the privilege of collaborating with diverse teams and contributing to real-world projects. This experience has not only sharpened my technical competencies but has also instilled in me a profound understanding of the significance of teamwork and community-driven development.
-
-I am eager to explore these skills and passion to the  objectives of your organisation. I appreciate your consideration of my application and the opportunity to potentially contribute to your esteemed organization.
-
-I look forward to your response.
-
-Best regards "
-      >
+      <div className="skills lg:flex lg:justify-between  lg:mr-10 py-6 lg:px-40 lg:py-10  font-burtons bg-veryDarkBlue ">
         <div className="">
           <div
-            className=" relative bg-gradient-to-b
+            className="flex justify-center items-center relative bg-gradient-to-b
        mx-auto text-center  overflow-hidden"
           >
             <Image
@@ -106,19 +125,37 @@ Best regards "
               height={300}
               layout="fit"
               objectFit="cover"
-              className=""
+              className="mx-auto "
             />
           </div>
         </div>
         <div>
-          <p>About Me</p>
+          <p className="mt-5 text-gray-400">About Me</p>
           <div className=" lg:py-6 lg:px-6  ">
             <p className="flex leading-6  text-gray-400 mt-5 lg:justify-end lg:w-80 lg:pb-6  ">
               I'm a junior front-end developer and writer, blending code and
               words to create compelling digital experiences. With a passion for
+              storytelling, I bring creativity and functionality to the web. I'm
+              a junior front-end developer and writer, blending code and words
+              to create compelling digital experiences. With a passion for
               storytelling, I bring creativity and functionality to the web.
             </p>
           </div>
+          {/* <button
+            onClick={skill}
+            className=" w-40  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg m-10 "
+          >
+            Skills
+          </button> */}
+          <button
+            onClick={skill} // Add this onClick event handler
+            className="w-40 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg m-10"
+          >
+            Skills
+          </button>
+          <div>{skills}</div>
+          <button>Skills</button>
+          <button>Skills</button>
         </div>
       </div>
       <section>
