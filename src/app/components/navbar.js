@@ -30,22 +30,46 @@ const Navbar = () => {
     setCurrentMode("light");
   };
 
+  // const toggleButton = (event) => {
+  //   if (currentMode === "dark") {
+  //     setLightMode();
+  //   } else {
+  //     setDarkMode();
+  //   }
+  // };
+
   const toggleButton = (event) => {
     if (currentMode === "dark") {
       setLightMode();
+      // Toggle background color here
+      const nav = document.querySelector("nav");
+      nav.style.backgroundColor = "transparent";
     } else {
       setDarkMode();
+      // Toggle background color here
+      const nav = document.querySelector("nav");
+      nav.style.backgroundColor = "#000"; // Set your desired background color
     }
   };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    // const nav = document.querySelector(".navbar");
+
+    // if (currentMode === "dark") {
+    //   nav.style.backgroundColor = "blue";
+    // } else {
+    //   nav.style.backgroundColor = "dark";
+    // }
   };
 
+  // const nav = document.getElementsByClassName("navbar");
+  // nav.classList.toggleMenu("bg-black");
+
   return (
-    <nav className=" text-white p-12 h-20 ">
+    <nav className=" text-white p-12 h-20 navbar lg:bg-veryDarkBlue ">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold">
+        <Link href="/" className="text-xl font-bold lg:text-[35px]">
           Ego
         </Link>
 
@@ -88,18 +112,26 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div
-          className={`md:flex space-x-4  ${isOpen ? "block" : "hidden"} m-10`}
+          className={`md:flex space-x-4  ${
+            isOpen ? "block" : "hidden"
+          } m-10 lg:flex lg:space-x-4 `}
         >
-          <div onClick={toggleButton} className="">
+          <div onClick={toggleButton} className=" lg:px-4 lg:py-2">
             {currentMode === "dark" ? (
               <FaMoon className="h-6 w-6 text-white text-2xl cursor-pointer" />
             ) : (
               <FaSun className="h-6 w-6 text-black " />
             )}
           </div>
-          <Link href="/about">About</Link>
-          <Link href="/project">Project</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/about" className="lg:px-4 lg:py-2">
+            About
+          </Link>
+          <Link href="/project" className="lg:px-4 lg:py-2">
+            Project
+          </Link>
+          <Link href="/contact" className="lg:px-4 lg:py-2">
+            Contact
+          </Link>
         </div>
       </div>
     </nav>

@@ -20,7 +20,7 @@ const header = () => {
       <div className="hero bg-veryDarkBlue  font-burtons ">
         <Navbar />
         <div className="lg:flex  lg:justify-between text-center py-6 lg:px-20 lg:py-20 ">
-          <div className="">
+          <div className="mt-16">
             <h1 className="text-4xl  py-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-bold lg:w-full mt-6 ">
               Hello, I'm
               <span className="">
@@ -38,13 +38,13 @@ const header = () => {
                     1000,
                   ]}
                   speed={25} // Reduce the speed (adjust the value as needed)
-                  // style={{ fontSize: "1em", display: "block" }} // Reduce font size and change display to block
+                  // style={{ fontSize: "2em", display: "block" }} // Reduce font size and change display to block
                   repeat={Infinity} // Set repeat to 2 to loop twice on load
-                  className=" block"
+                  className=" block text-[43px]"
                 />
               </span>
             </h1>
-            <div>
+            <div className="text-white">
               I'm a junior front-end developer and writer, blending code
               and...........
             </div>
@@ -70,83 +70,55 @@ const header = () => {
               </a>
             </button>
           </div>
-          <div className="rounded-full   w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative mx-auto text-center">
-            <Image
-              src="/shee.png"
-              alt="Note Image"
-              width={300}
-              height={200}
-              layout="fit"
-              objectFit="cover"
-              className="rounded-full w-60 h-60 lg:w-64 lg:h-64 border border-transparent absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
-            />
+          <div className="flex justify-center items-center h-screen">
+            <div className="rounded-full   w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative mx-auto text-center">
+              <Image
+                src="/shee.png"
+                alt="Note Image"
+                width={300}
+                height={200}
+                layout="fit"
+                objectFit="cover"
+                className="rounded-full w-60 h-60 lg:w-64 lg:h-64 border lg:ml-32  border-transparent absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
+              />
+            </div>
           </div>
-          {/* <div className="lg:max-w-full lg:py-6 lg:px-6 lg:h-48 lg:bg-white shadow-2xl lg:rounded-lg group lg:hover:bg-normalBlue lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:scale-105 lg:mt-52">
-              <p className="flex leading-6 lg:text-normalBlue text-gray-400 mt-5 lg:justify-end lg:w-80 lg:pb-6  transition duration-300 ease-in-out group-hover:text-white">
-                I'm a junior front-end developer and writer, blending code and
-                words to create compelling digital experiences. With a passion
-                for storytelling, I bring creativity and functionality to the
-                web.
-              </p>
-            </div> */}
         </div>
       </div>
-      <div className="skills lg:flex lg:justify-between text-center py-6 lg:px-40 lg:py-10  font-burtons  bg-veryLightBlue">
-        <div className="lg:mt-20">
-          <div className="flex gap-20 text-gray-500 text-3xl justify-center py-4">
-            <a
-              href="https://twitter.com/GloryNwaekpe"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/glory-nwaekpe/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://github.com/Nwakaego-Ego"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer"
-            >
-              <FaGithub />
-            </a>
-          </div>
+      <div
+        className="skills lg:flex lg:justify-between text-center py-6 lg:px-40 lg:py-10  font-burtons bg-veryDarkBlue h-[500px] In my journey through the world of open source, I have had the privilege of collaborating with diverse teams and contributing to real-world projects. This experience has not only sharpened my technical competencies but has also instilled in me a profound understanding of the significance of teamwork and community-driven development.
+
+I am eager to explore these skills and passion to the  objectives of your organisation. I appreciate your consideration of my application and the opportunity to potentially contribute to your esteemed organization.
+
+I look forward to your response.
+
+Best regards "
+      >
+        <div className="">
           <div
             className=" relative bg-gradient-to-b
-        from-darkBlue mt-8 mx-auto rounded-full w-60 h-60 overflow-hidden"
+       mx-auto text-center  overflow-hidden"
           >
             <Image
-              src="/engineer.svg"
+              src="/bulb.jfif"
               alt="Note Image"
-              width={300}
-              height={200}
+              width={400}
+              height={300}
               layout="fit"
               objectFit="cover"
-              className="mt-10"
+              className=""
             />
           </div>
         </div>
         <div>
-          {techStack.map((stack, index) => {
-            return (
-              <div
-                className="mx-20 lg:w-52 cursor-pointer h-10 flex flex-row text-black  items-center justify-center text-center shadow-2xl rounded-lg bg-white mt-10   hover:bg-normalBlue hover:text-white transition duration-300 ease-in-out transform hover:scale-105 animate-bounce"
-                key={index}
-              >
-                <ul>
-                  <li>{stack}</li>
-                </ul>
-              </div>
-            );
-          })}
+          <p>About Me</p>
+          <div className=" lg:py-6 lg:px-6  ">
+            <p className="flex leading-6  text-gray-400 mt-5 lg:justify-end lg:w-80 lg:pb-6  ">
+              I'm a junior front-end developer and writer, blending code and
+              words to create compelling digital experiences. With a passion for
+              storytelling, I bring creativity and functionality to the web.
+            </p>
+          </div>
         </div>
       </div>
       <section>
