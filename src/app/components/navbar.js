@@ -30,37 +30,23 @@ const Navbar = () => {
     setCurrentMode("light");
   };
 
-  // const toggleButton = (event) => {
-  //   if (currentMode === "dark") {
-  //     setLightMode();
-  //   } else {
-  //     setDarkMode();
-  //   }
-  // };
-
   const toggleButton = (event) => {
     if (currentMode === "dark") {
       setLightMode();
-      // Toggle background color here
-      const nav = document.querySelector("nav");
-      nav.style.backgroundColor = "transparent";
     } else {
       setDarkMode();
-      // Toggle background color here
-      const nav = document.querySelector("nav");
-      nav.style.backgroundColor = "#000"; // Set your desired background color
     }
   };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    // const nav = document.querySelector(".navbar");
+    const nav = document.querySelector(".navbar");
 
-    // if (currentMode === "dark") {
-    //   nav.style.backgroundColor = "blue";
-    // } else {
-    //   nav.style.backgroundColor = "dark";
-    // }
+    if (currentMode === "dark") {
+      nav.style.backgroundColor = "blue";
+    } else {
+      nav.style.backgroundColor = "dark";
+    }
   };
 
   // const nav = document.getElementsByClassName("navbar");

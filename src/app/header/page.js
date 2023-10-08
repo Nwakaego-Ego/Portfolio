@@ -1,58 +1,24 @@
 "use client";
-import { FaReact } from "react-icons/fa";
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
-import { useState } from "react";
+// import { FaReact } from "react-icons/fa";
+// import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Navbar from "../components/navbar";
+import Skills from "../components/skills";
+import Education from "../components/education";
+import Certifications from "../components/certifications";
 
 const header = () => {
-  // const [skills, setSkills] = useState([]);
-
-  // const skillStack = [
-  //   "HTML",
-  //   "CSS",
-  //   "JAVASCRIPT",
-  //   "REACT",
-  //   "NEXTJS",
-  //   "TAILWIND",
-  // ];
-
-  // const skill = () => {
-  //   const skillRoll = skillStack.map((professional, index) => {
-  //     return <div key={index}></div>;
-  //   });
-  //   setSkills(skillRoll);
-  // };
-
-  const [skills, setSkills] = useState([]);
-  const skillStack = [
-    "HTML",
-    "CSS",
-    "JAVASCRIPT",
-    "REACT",
-    "NEXTJS",
-    "TAILWIND",
-  ];
-
-  const skill = () => {
-    const skillRoll = skillStack.map((professional, index) => (
-      <div key={index}>{professional}</div>
-    ));
-    setSkills(skillRoll);
-  };
-
   return (
     <main>
-      <div className="hero bg-veryDarkBlue  font-burtons ">
+      <div className="hero bg-veryDarkBlue font-burtons">
         <Navbar />
-        <div className="lg:flex  lg:justify-between text-center py-6 lg:px-20 lg:py-20 ">
-          <div className="mt-4">
-            <h1 className="text-4xl  py-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-bold lg:w-full mt-6 ">
-              Hello, I'm
-              <span className="">
+        <div className="lg:flex lg:justify-between text-center lg:px-20 lg:mt-20">
+          <div className="relative lg:top">
+            <h1 className="text-4xl mb-4  py-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-bold lg:w-full ">
+              <span className="leading-6"> Hello, I'm</span>
+              <span className="pt-16">
                 <br />
-
                 <TypeAnimation
                   sequence={[
                     "Nwaekpe Glory Nwakaego",
@@ -64,19 +30,18 @@ const header = () => {
                     "Opensource Enthusiast",
                     1000,
                   ]}
-                  speed={25} // Reduce the speed (adjust the value as needed)
-                  // style={{ fontSize: "2em", display: "block" }} // Reduce font size and change display to block
-                  repeat={Infinity} // Set repeat to 2 to loop twice on load
-                  className=" block text-[43px]"
+                  speed={25}
+                  repeat={Infinity}
+                  className="block text-[43px]"
                 />
               </span>
             </h1>
             <div className="text-white">
-              I'm a junior front-end developer and writer, blending code
-              and...........
+              I'm a junior front-end developer, technical writer, and an
+              opensource enthusiast
             </div>
-            {/* <h2 className="text-xl font-medium mb-5 text-gray-300 animate-pulse"></h2> */}
-            <button className=" w-40  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg m-10">
+            <button className="w-40 relative mt-8 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg m-4">
+              {" "}
               <a
                 href="https://drive.google.com/file/d/1cl-bca6iy1bZs-bv3sjmefBjFBD7gjYN/view?usp=drive_link"
                 target="_blank"
@@ -86,7 +51,8 @@ const header = () => {
                 Hire me
               </a>
             </button>
-            <button className=" w-40  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg m-10 ">
+            <button className="w-40 mt-8 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg m-4">
+              {" "}
               <a
                 href="https://drive.google.com/file/d/1cl-bca6iy1bZs-bv3sjmefBjFBD7gjYN/view?usp=drive_link"
                 target="_blank"
@@ -97,8 +63,9 @@ const header = () => {
               </a>
             </button>
           </div>
-          <div className="flex justify-center items-center h-screen">
-            <div className="rounded-full   w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative mx-auto text-center">
+          <div className="flex justify-center items-center ">
+            {" "}
+            <div className="rounded-full w-[250px] h-[250px] lg:w-[400px] mt-40  relative mx-auto text-center">
               <Image
                 src="/shee.png"
                 alt="Note Image"
@@ -106,17 +73,18 @@ const header = () => {
                 height={200}
                 layout="fit"
                 objectFit="cover"
-                className="rounded-full w-60 h-30 lg:w-64 lg:h-64 border lg:ml-32  border-transparent absolute transform -translate-x-1/2 -translate-y-1/2 left-1/2 "
+                className="rounded-full w-60 h-60 lg:w-64 lg:h-64 border lg:ml-8 border-transparent absolute transform -translate-x-1/2 -translate-y-1/2 left-1/2"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="skills lg:flex lg:justify-between  lg:mr-10 py-6 lg:px-40 lg:py-10  font-burtons bg-veryDarkBlue ">
+
+      <div className="skills relative lg:flex lg:justify-between  lg:mr-10  lg:px-40   font-burtons bg-veryDarkBlue ">
         <div className="">
           <div
             className="flex justify-center items-center relative bg-gradient-to-b
-       mx-auto text-center  overflow-hidden"
+       mx-auto text-center  overflow-hidden top-4"
           >
             <Image
               src="/bulb.jfif"
@@ -125,38 +93,30 @@ const header = () => {
               height={300}
               layout="fit"
               objectFit="cover"
-              className="mx-auto "
+              className="mx-auto rounded mt-10"
             />
           </div>
         </div>
         <div>
-          <p className="mt-5 text-gray-400">About Me</p>
+          <p className="mt-10 lg:mt-1 text-gray-400 ml-5 text-center lg:text-left">
+            About Me
+          </p>
           <div className=" lg:py-6 lg:px-6  ">
             <p className="flex leading-6  text-gray-400 mt-5 lg:justify-end lg:w-80 lg:pb-6  ">
               I'm a junior front-end developer and writer, blending code and
               words to create compelling digital experiences. With a passion for
-              storytelling, I bring creativity and functionality to the web. I'm
-              a junior front-end developer and writer, blending code and words
-              to create compelling digital experiences. With a passion for
-              storytelling, I bring creativity and functionality to the web.
+              storytelling, I bring creativity and functionality to the web. My
+              journey as a developer has been enriched by the open-source
+              community, where I've had the privilege to contribute, learn, and
+              grow. It's this collaborative spirit that fuels my enthusiasm and
+              drives me to continually evolve and improve.
             </p>
           </div>
-          {/* <button
-            onClick={skill}
-            className=" w-40  bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg m-10 "
-          >
-            Skills
-          </button> */}
-          <button
-            onClick={skill} // Add this onClick event handler
-            className="w-40 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg m-10"
-          >
-            Skills
-          </button>
-          <div>{skills}</div>
-          <button>Skills</button>
-          <button>Skills</button>
         </div>
+      </div>
+      <div className="flex justify-center space-x-4 bg-veryDarkBlue">
+        <Skills /> <Education />
+        <Certifications />
       </div>
       <section>
         <div className="  text-center shadow-2xl rounded-lg  ">
