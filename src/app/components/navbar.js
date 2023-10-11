@@ -49,9 +49,6 @@ const Navbar = () => {
     }
   };
 
-  // const nav = document.getElementsByClassName("navbar");
-  // nav.classList.toggleMenu("bg-black");
-
   return (
     <nav className=" text-white p-12 h-20 navbar lg:bg-veryDarkBlue ">
       <div className="container mx-auto flex justify-between items-center">

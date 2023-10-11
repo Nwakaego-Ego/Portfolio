@@ -102,7 +102,7 @@ const header = () => {
             About Me
           </p>
           <div className=" lg:py-6 lg:px-6  ">
-            <p className="flex leading-6  text-gray-400 mt-5 lg:justify-end lg:w-80 lg:pb-6  ">
+            <p className="flex leading-6  text-gray-400 mt-5  lg:w-80 lg:pb-6  lg:text-center lg:items-center lg:justify-center">
               I'm a junior front-end developer and writer, blending code and
               words to create compelling digital experiences. With a passion for
               storytelling, I bring creativity and functionality to the web. My
@@ -114,7 +114,7 @@ const header = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center space-x-4 bg-veryDarkBlue">
+      <div className="flex flex-col items-center lg:flex-row justify-center mx-auto  lg:space-x-4 bg-veryDarkBlue  lg:ml-0">
         <Skills /> <Education />
         <Certifications />
       </div>
