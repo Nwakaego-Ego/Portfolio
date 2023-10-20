@@ -7,6 +7,7 @@ import Navbar from "../components/navbar";
 import Skills from "../components/skills";
 import Education from "../components/education";
 import Certifications from "../components/certifications";
+import Projects from "../components/project";
 
 const header = () => {
   return (
@@ -118,134 +119,7 @@ const header = () => {
         <Skills /> <Education />
         <Certifications />
       </div>
-      <section>
-        <div className="  text-center shadow-2xl rounded-lg  ">
-          <div className=" lg:flex m-10">
-            <div className="shadow-2xl  lg:m-5 rounded-3xl max-w-xl">
-              <div className=" flex justify-center items-center ">
-                <Image
-                  src="/note_.svg"
-                  alt="Note Image"
-                  width={300}
-                  height={200}
-                  className="mt-10 "
-                />
-              </div>
-              <div className="mt-10 bg-darkBlue rounded-b-2xl">
-                <h2 className="justify-center my-2 text-white   ">
-                  Note Project
-                </h2>
-                <p className="text-sm text-gray-300">
-                  I created a note-taking app, streamlining organization and
-                  productivity by capturing and managing ideas with ease and
-                  efficiency.
-                </p>
-                <div className="mt-2">
-                  <a
-                    href="https://luminous-travesseiro-93a1d7.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-white hover:opacity-70 underline font-bold text-lg cursor-pointer"
-                  >
-                    Link
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="shadow-2xl  lg:m-5 mt-10 rounded-lg max-w-xl">
-              <div className=" flex justify-center items-center ">
-                <Image
-                  src="/weath.svg"
-                  alt="Note Image"
-                  width={300}
-                  height={200}
-                  className="mt-10 "
-                />
-              </div>
-              <div className="mt-10  bg-darkBlue rounded-b-2xl">
-                <h2 className="justify-center my-2 text-white ">
-                  Weather Project
-                </h2>
-                <p className="text-sm text-gray-300">
-                  I developed a weather project, offering real-time forecasts,
-                  enhancing user experience through accurate and accessible
-                  weather information.
-                </p>
-                <div className="mt-2">
-                  <a
-                    href="https://fabulous-gnome-dc91ba.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-white hover:opacity-70 underline font-bold text-lg cursor-pointer"
-                  >
-                    Link
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className=" lg:flex">
-            <div className="shadow-2xl lg:m-5 m-8 rounded-lg max-w-xl">
-              <div className=" flex justify-center items-center ">
-                <Image
-                  src="/dir.svg"
-                  alt="Note Image"
-                  width={300}
-                  height={200}
-                  className="mt-10 "
-                />
-              </div>
-              <div className="mt-10  bg-darkBlue rounded-b-2xl">
-                <h2 className="justify-center my-2 text-white ">
-                  Pidgin Project
-                </h2>
-                <p className="text-sm text-gray-300">
-                  I designed a local slang directory, celebrating linguistic
-                  diversity and preserving community expressions for an
-                  authentic cultural experience.
-                </p>
-                <div className="mt-2">
-                  <a
-                    href="https://velvety-sable-9ec5c6.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-white hover:opacity-70 underline font-bold text-lg"
-                  >
-                    Link
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="shadow-2xl lg:m-5 m-8 rounded-lg max-w-xl">
-              <div className=" flex justify-center items-center ">
-                <Image
-                  src="/blog.svg"
-                  alt="Note Image"
-                  width={300}
-                  height={200}
-                  className="mt-10 "
-                />
-              </div>
-              <div className="mt-10  bg-darkBlue rounded-b-2xl">
-                <h2 className="justify-center my-2 text-white ">Blog Posts</h2>
-                <p className="text-sm text-gray-300">
-                  I specialize in technical writing, simplifying complex
-                  concepts and making information accessible for clear and
-                  effective communication in various fields.
-                </p>
-                <div className="mt-2">
-                  <a
-                    href="/"
-                    class="text-white hover:opacity-70 underline font-bold text-lg"
-                  >
-                    Link
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Projects />
 
       <footer className="bg-veryDarkBlue text-white py-8">
         <div className="container mx-auto text-center">
