@@ -50,7 +50,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" text-white p-12 h-20 navbar lg:bg-veryDarkBlue ">
+    <nav className=" text-white p-12 h-20 navbar bg-veryDarkBlue  ">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-xl font-bold lg:text-[35px]">
           Ego

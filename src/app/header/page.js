@@ -12,9 +12,9 @@ import Projects from "../components/project";
 const header = () => {
   return (
     <main>
-      <div className="hero bg-veryDarkBlue font-burtons">
+      <div className="hero  font-burtons">
         <Navbar />
-        <div className="lg:flex lg:justify-between text-center lg:px-20 lg:mt-20">
+        <div className="lg:flex lg:justify-between text-center lg:px-20 lg:mt-20 bg-veryDarkBlue">
           <div className="relative lg:top">
             <h1 className="text-4xl mb-4  py-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-bold lg:w-full ">
               <span className="leading-6"> Hello, I'm</span>
