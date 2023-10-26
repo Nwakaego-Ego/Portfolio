@@ -1,7 +1,7 @@
 const projects = () => {
   return (
     <>
-      <div className="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-10">
+      <div className=" p-10">
         <div className="flex">
           <div className="border border-[#F48B10] p-10 bg-red-200 rounded-md shadow-md">
             <img

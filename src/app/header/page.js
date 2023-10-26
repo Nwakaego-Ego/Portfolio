@@ -10,8 +10,20 @@ import Certifications from "../components/certifications";
 import Projects from "../components/project";
 
 const header = () => {
+  const { isDarkMode, toggleDarkMode } = useTheme();
+
   return (
-    <main>
+    <main className={`App ${isDarkMode ? "dark" : "light"}`}>
+      <button
+        onClick={toggleDarkMode}
+        className="fixed top-4 right-4 text-white"
+      >
+        {currentMode === "dark" ? (
+          <FaSun className="h-6 w-6" />
+        ) : (
+          <FaMoon className="h-6 w-6" />
+        )}
+      </button>
       <div className="hero  font-burtons">
         <Navbar />
         <div className="lg:flex lg:justify-between text-center lg:px-20 lg:mt-20 ">
@@ -81,10 +93,10 @@ const header = () => {
         </div>
       </div>
 
-      <div className="skills relative lg:flex lg:justify-between  lg:mr-10  lg:px-40   font-burtons bg-veryDarkBlue ">
+      <div className="skills relative lg:flex lg:justify-between  lg:mr-10  lg:px-40    ">
         <div className="">
           <div
-            className="flex justify-center items-center relative bg-gradient-to-b
+            className="flex justify-center items-center relative 
        mx-auto text-center  overflow-hidden top-4"
           >
             <Image
@@ -115,13 +127,13 @@ const header = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center lg:flex-row justify-center mx-auto  lg:space-x-4 bg-veryDarkBlue  lg:ml-0">
+      <div className="flex flex-col items-center lg:flex-row justify-center mx-auto  lg:space-x-4   lg:ml-0">
         <Skills /> <Education />
         <Certifications />
       </div>
       <Projects />
 
-      <footer className="bg-veryDarkBlue text-white py-8">
+      <footer className=" text-white py-8">
         <div className="container mx-auto text-center">
           <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
           <p className="mb-6">Have a project in mind? Let's collaborate!</p>
