@@ -50,7 +50,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" text-white p-12 h-20 navbar bg-veryDarkBlue  ">
+    <nav className=" text-white p-12 h-20 navbar  ">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-xl font-bold lg:text-[35px]">
           Ego
@@ -97,13 +97,13 @@ const Navbar = () => {
             isOpen ? "block" : "hidden"
           } m-10 lg:flex lg:space-x-4 `}
         >
-          {/* <div onClick={toggleButton} className=" lg:px-4 lg:py-2">
+          <div onClick={toggleButton} className=" lg:px-4 lg:py-2">
             {currentMode === "dark" ? (
               <FaMoon className="h-6 w-6 text-white text-2xl cursor-pointer" />
             ) : (
               <FaSun className="h-6 w-6 text-black " />
             )}
-          </div> */}
+          </div>
           <Link href="/about" className="lg:px-4 lg:py-2">
             About
           </Link>

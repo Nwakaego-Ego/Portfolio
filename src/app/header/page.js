@@ -14,7 +14,7 @@ const header = () => {
     <main>
       <div className="hero  font-burtons">
         <Navbar />
-        <div className="lg:flex lg:justify-between text-center lg:px-20 lg:mt-20 bg-veryDarkBlue">
+        <div className="lg:flex lg:justify-between text-center lg:px-20 lg:mt-20 ">
           <div className="relative lg:top">
             <h1 className="text-4xl mb-4  py-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-bold lg:w-full ">
               <span className="leading-6"> Hello, I'm</span>
