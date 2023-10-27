@@ -26,17 +26,17 @@ const projects = () => {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="border p-10 rounded-lg shadow-lg bg-white">
+      <div className="border p-10 rounded-lg shadow-lg ">
         <div className="grid grid-cols-2 gap-4">
           {tasks.map((task, index) => (
-            <div key={index} className="card text-center">
+            <div key={index} className="card text-center ">
               <img
                 src={task.image}
                 alt={`project ${index}`}
                 className="image"
               />
               <a href={task.href}>
-                <span className="">Visit Site</span>
+                <span>Visit Site</span>
               </a>
               <p className="text-center mt-2 font-semibold">{task.task}</p>
             </div>

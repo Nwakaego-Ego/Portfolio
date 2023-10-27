@@ -3,12 +3,12 @@ import { ThemeProvider } from "./ThemeContext";
 
 export default function Home() {
   return (
-    // <main className="">
-    //   <Header />
-    // </main>
-
-    <ThemeProvider>
+    <main className="">
       <Header />
-    </ThemeProvider>
+    </main>
+
+    // <ThemeProvider>
+    //   <Header />
+    // </ThemeProvider>
   );
 }

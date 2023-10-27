@@ -2,6 +2,7 @@
 
 // import { FaReact } from "react-icons/fa";
 // import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import React, { useState } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Navbar from "../components/navbar";
@@ -9,13 +10,38 @@ import Skills from "../components/skills";
 import Education from "../components/education";
 import Certifications from "../components/certifications";
 import Projects from "../components/Projects/project";
+import { FaSun, FaMoon } from "react-icons/fa";
+import Link from "next/link";
 
 const header = () => {
-  // const { isDarkMode, toggleDarkMode } = useTheme();
+  const [isDarkMode, setDarkMode] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentMode, setCurrentMode] = useState();
+
+  const toggleDarkMode = () => {
+    setDarkMode(!isDarkMode);
+  };
 
   return (
-    <main>
-      <div className="hero  font-burtons">
+    <main className={`App ${isDarkMode ? "dark" : "light"}`}>
+      <div className="hero">
+        <div onClick={toggleDarkMode} className=" lg:px-4 lg:py-2">
+          {currentMode === "dark" ? (
+            <FaMoon className="h-6 w-6 text-white text-2xl cursor-pointer" />
+          ) : (
+            <FaSun className="h-6 w-6 text-black " />
+          )}
+        </div>
+        {/* <Link href="/about" className="lg:px-4 lg:py-2">
+            About
+          </Link>
+          <Link href="/project" className="lg:px-4 lg:py-2">
+            Project
+          </Link>
+          <Link href="/contact" className="lg:px-4 lg:py-2">
+            Contact
+          </Link> */}
+
         <Navbar />
         <div className="lg:flex lg:justify-between text-center lg:px-20 lg:mt-20 ">
           <div className="relative lg:top">

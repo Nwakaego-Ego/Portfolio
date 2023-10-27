@@ -1,16 +1,16 @@
 import Link from "next/link";
-import { FaSun, FaMoon } from "react-icons/fa";
+// import { FaSun, FaMoon } from "react-icons/fa";
 import { useState } from "react";
 
 const Navbar = () => {
   const [currentMode, setCurrentMode] = useState();
   const [isOpen, setIsOpen] = useState(false);
 
-  const [isDarkMode, setDarkMode] = useState(false);
+  // const [isDarkMode, setDarkMode] = useState(false);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!isDarkMode);
-  };
+  // const toggleDarkMode = () => {
+  //   setDarkMode(!isDarkMode);
+  // };
 
   // const setHeroBg = (bgColor) => {
   //   const herobg = document.querySelector(".hero");
@@ -56,7 +56,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`App ${isDarkMode ? "dark" : "light"}`}>
+    <div>
       <nav className=" text-white p-12 h-20 navbar  ">
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="text-xl font-bold lg:text-[35px]">
@@ -104,13 +104,13 @@ const Navbar = () => {
               isOpen ? "block" : "hidden"
             } m-10 lg:flex lg:space-x-4 `}
           >
-            <div onClick={toggleDarkMode} className=" lg:px-4 lg:py-2">
+            {/* <div onClick={toggleDarkMode} className=" lg:px-4 lg:py-2">
               {currentMode === "dark" ? (
                 <FaMoon className="h-6 w-6 text-white text-2xl cursor-pointer" />
               ) : (
                 <FaSun className="h-6 w-6 text-black " />
               )}
-            </div>
+            </div> */}
             <Link href="/about" className="lg:px-4 lg:py-2">
               About
             </Link>
