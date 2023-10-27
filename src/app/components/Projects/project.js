@@ -1,32 +1,44 @@
 import "./project.css";
 
 const projects = () => {
+  const tasks = [
+    {
+      image: "/note_.svg",
+      href: "https://stunning-faloodeh-9a1a26.netlify.app/",
+      task: "Note App",
+    },
+    {
+      image: "/weath.svg",
+      href: "https://stunning-faloodeh-9a1a26.netlify.app/",
+      task: "Weather App",
+    },
+    {
+      image: "/blog.svg",
+      href: "https://stunning-faloodeh-9a1a26.netlify.app/",
+      task: "Blog Post",
+    },
+    {
+      image: "/note_.svg",
+      href: "https://stunning-faloodeh-9a1a26.netlify.app/",
+      task: "Note App",
+    },
+  ];
+
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="border p-10 rounded-lg shadow-lg bg-white">
         <div className="grid grid-cols-2 gap-4">
-          {/* {Array(4)
-            .fill()
-            .map((_, index) => (
-              <div
-                key={index}
-                className="border p-6 rounded-md shadow-md hover:shadow-xl transition-transform transform hover:scale-105"
-              >
-                <img
-                  src="/blog.svg"
-                  alt={`Note Image ${index + 1}`}
-                  className="w-[250px] h-[150px]"
-                />
-              </div>
-            ))} */}
-
-          {[1, 2, 3, 4].map((index) => (
-            <div key={index} className="card">
+          {tasks.map((task, index) => (
+            <div key={index} className="card text-center">
               <img
-                src="/blog.svg"
-                alt={`Note Image ${index}`}
+                src={task.image}
+                alt={`project ${index}`}
                 className="image"
               />
+              <a href={task.href}>
+                <span className="">Visit Site</span>
+              </a>
+              <p className="text-center mt-2 font-semibold">{task.task}</p>
             </div>
           ))}
         </div>
