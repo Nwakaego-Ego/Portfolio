@@ -8,23 +8,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* [data-theme="dark"] {
- 
-  background-color: black;
-  color: #ffffff;
-}
-
-[data-theme="light"] {
-  background-color: #010c48;
-  color: #1a1a1a;
-} */
-
 .App {
   background-color: #010c48;
   color: #000000;
 }
 
-/* Dark mode styles */
+/* Dark mode styles  */
 .App.dark {
   background-color: #333333;
   color: #ffffff;

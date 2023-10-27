@@ -1,17 +1,15 @@
 "use client";
-
-// import { FaReact } from "react-icons/fa";
-// import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import React, { useState } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar/navbar";
 import Skills from "../components/skills";
 import Education from "../components/education";
 import Certifications from "../components/certifications";
 import Projects from "../components/Projects/project";
 import { FaSun, FaMoon } from "react-icons/fa";
-import Link from "next/link";
+import About from "../Pages/About/Page";
+import Contact from "../Pages/Contact/page";
 
 const header = () => {
   const [isDarkMode, setDarkMode] = useState(false);
@@ -32,15 +30,6 @@ const header = () => {
             <FaSun className="h-6 w-6 text-black " />
           )}
         </div>
-        {/* <Link href="/about" className="lg:px-4 lg:py-2">
-            About
-          </Link>
-          <Link href="/project" className="lg:px-4 lg:py-2">
-            Project
-          </Link>
-          <Link href="/contact" className="lg:px-4 lg:py-2">
-            Contact
-          </Link> */}
 
         <Navbar />
         <div className="lg:flex lg:justify-between text-center lg:px-20 lg:mt-20 ">
@@ -109,85 +98,13 @@ const header = () => {
           </div>
         </div>
       </div>
-
-      <div className="skills relative lg:flex lg:justify-between  lg:mr-10  lg:px-40    ">
-        <div className="">
-          <div
-            className="flex justify-center items-center relative 
-       mx-auto text-center  overflow-hidden top-4"
-          >
-            <Image
-              src="/bulb.jfif"
-              alt="Note Image"
-              width={400}
-              height={300}
-              layout="fit"
-              objectFit="cover"
-              className="mx-auto rounded mt-10"
-            />
-          </div>
-        </div>
-        <div>
-          <p className="mt-10 lg:mt-1 text-gray-400 ml-5 text-center lg:text-left">
-            About Me
-          </p>
-          <div className=" lg:py-6 lg:px-6  ">
-            <p className="flex leading-6  text-gray-400 mt-5  lg:w-80 lg:pb-6  lg:text-center lg:items-center lg:justify-center">
-              I'm a junior front-end developer and writer, blending code and
-              words to create compelling digital experiences. With a passion for
-              storytelling, I bring creativity and functionality to the web. My
-              journey as a developer has been enriched by the open-source
-              community, where I've had the privilege to contribute, learn, and
-              grow. It's this collaborative spirit that fuels my enthusiasm and
-              drives me to continually evolve and improve.
-            </p>
-          </div>
-        </div>
-      </div>
+      <About />
       <div className="flex flex-col items-center lg:flex-row justify-center mx-auto  lg:space-x-4   lg:ml-0">
         <Skills /> <Education />
         <Certifications />
       </div>
       <Projects />
-
-      <footer className=" text-white py-8">
-        <div className="container mx-auto text-center">
-          <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
-          <p className="mb-6">Have a project in mind? Let's collaborate!</p>
-          <a
-            href="mailto:glorynwaekpe@gmail.com"
-            className="text-blue-500 hover:text-blue-300 transition duration-300"
-          >
-            glorynwaekpe@gmail.com
-          </a>
-          <div className="mt-4">
-            <a
-              href="https://www.linkedin.com/in/glory-nwaekpe/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:text-blue-300 transition duration-300 mx-2"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://github.com/Nwakaego-Ego"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:text-blue-300 transition duration-300 mx-2"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://twitter.com/GloryNwaekpe"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:text-blue-300 transition duration-300 mx-2"
-            >
-              Twitter
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Contact />
     </main>
   );
 };
