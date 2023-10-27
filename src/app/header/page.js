@@ -8,7 +8,7 @@ import Navbar from "../components/navbar";
 import Skills from "../components/skills";
 import Education from "../components/education";
 import Certifications from "../components/certifications";
-import Projects from "../components/project";
+import Projects from "../components/Projects/project";
 
 const header = () => {
   // const { isDarkMode, toggleDarkMode } = useTheme();

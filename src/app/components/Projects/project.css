@@ -1,0 +1,20 @@
+/* In your CSS or Tailwind CSS configuration */
+
+.card {
+  border: 1px solid #f48b10; /* Add your desired border style */
+  padding: 1.5rem; /* Adjust padding as needed */
+  border-radius: 0.375rem; /* Adjust border radius as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add your desired shadow */
+  transition: transform 0.2s ease; /* Add a smooth transformation effect */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+  transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.image {
+  width: 250px; /* Set image width */
+  height: 150px; /* Set image height */
+}
