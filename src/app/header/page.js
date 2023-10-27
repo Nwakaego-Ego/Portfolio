@@ -1,4 +1,5 @@
 "use client";
+
 // import { FaReact } from "react-icons/fa";
 // import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import Image from "next/image";
@@ -10,20 +11,10 @@ import Certifications from "../components/certifications";
 import Projects from "../components/project";
 
 const header = () => {
-  const { isDarkMode, toggleDarkMode } = useTheme();
+  // const { isDarkMode, toggleDarkMode } = useTheme();
 
   return (
-    <main className={`App ${isDarkMode ? "dark" : "light"}`}>
-      <button
-        onClick={toggleDarkMode}
-        className="fixed top-4 right-4 text-white"
-      >
-        {currentMode === "dark" ? (
-          <FaSun className="h-6 w-6" />
-        ) : (
-          <FaMoon className="h-6 w-6" />
-        )}
-      </button>
+    <main>
       <div className="hero  font-burtons">
         <Navbar />
         <div className="lg:flex lg:justify-between text-center lg:px-20 lg:mt-20 ">

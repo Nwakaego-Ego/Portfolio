@@ -5,12 +5,10 @@ const education = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const skillStack = [
-    "HTML",
-    "CSS",
-    "JAVASCRIPT",
-    "REACT",
-    "NEXTJS",
-    "TAILWIND",
+    "Zuri Training",
+    "Shecodes Plus",
+    "Shecodes Responsive",
+    "Shecodes React",
   ];
 
   const skill = () => {

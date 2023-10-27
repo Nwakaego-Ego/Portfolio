@@ -5,12 +5,10 @@ const certifications = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const skillStack = [
-    "HTML",
-    "CSS",
-    "JAVASCRIPT",
-    "REACT",
-    "NEXTJS",
-    "TAILWIND",
+    "Junior Frontend Developer",
+    "Web Developement",
+    "Responsive Design",
+    "Junior React Developer",
   ];
 
   const skill = () => {
