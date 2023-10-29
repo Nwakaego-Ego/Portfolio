@@ -2,8 +2,6 @@ import Link from "next/link";
 import { useState } from "react";
 import "./navbar.css";
 
-import { FaSun, FaMoon } from "react-icons/fa";
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -39,15 +37,18 @@ const Navbar = () => {
                 <FaSun className="h-6 w-6 text-black " />
               )}
             </div> */}
-            <Link href="/about" className="lg:px-4 lg:py-2">
+            {/* <Link href="/about" className="lg:px-4 lg:py-2">
               About
-            </Link>
-            <Link href="/project" className="lg:px-4 lg:py-2">
-              ProjectS
-            </Link>
-            <Link href="/Contact" className="lg:px-4 lg:py-2">
+            </Link> */}
+            <a href="/About" className="lg:px-4 lg:py-2">
+              About{" "}
+            </a>
+            <a href="/project" className="lg:px-4 lg:py-2">
+              Projects
+            </a>
+            <a href="/Contact" className="lg:px-4 lg:py-2">
               Contact
-            </Link>
+            </a>
           </div>
         </div>
       </nav>

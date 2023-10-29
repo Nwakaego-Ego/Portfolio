@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar/navbar";
 import Skills from "../components/skills";
 import Education from "../components/education";
 import Certifications from "../components/certifications";
-import Projects from "../components/Projects/project";
+import Projects from "../components/Projects/page";
 import { FaSun, FaMoon } from "react-icons/fa";
 import About from "../Pages/About/Page";
 import Contact from "../Pages/Contact/page";
@@ -14,7 +14,6 @@ import Contact from "../Pages/Contact/page";
 const header = () => {
   const [isDarkMode, setDarkMode] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [currentMode, setCurrentMode] = useState();
 
   const toggleDarkMode = () => {
     setDarkMode(!isDarkMode);
@@ -23,8 +22,8 @@ const header = () => {
   return (
     <main className={`App ${isDarkMode ? "dark" : "light"}`}>
       <div className="hero">
-        <div onClick={toggleDarkMode} className=" lg:px-4 lg:py-2">
-          {currentMode === "dark" ? (
+        <div onClick={toggleDarkMode} className=" lg:px-4 lg:py-2 fixed">
+          {isDarkMode ? (
             <FaMoon className="h-6 w-6 text-white text-2xl cursor-pointer" />
           ) : (
             <FaSun className="h-6 w-6 text-black " />
@@ -62,7 +61,7 @@ const header = () => {
             <button className="w-40 relative mt-8 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg m-4">
               {" "}
               <a
-                href="https://drive.google.com/file/d/1cl-bca6iy1bZs-bv3sjmefBjFBD7gjYN/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1L7VtZxTMGgRT4xfhg8vjfmt7Eo0ff8oc/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cursor-pointer"
@@ -73,7 +72,7 @@ const header = () => {
             <button className="w-40 mt-8 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg m-4">
               {" "}
               <a
-                href="https://drive.google.com/file/d/1cl-bca6iy1bZs-bv3sjmefBjFBD7gjYN/view?usp=drive_link"
+                href="https://ego.hashnode.dev/?source=top_nav_blog_home"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cursor-pointer"
