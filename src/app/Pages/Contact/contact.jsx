@@ -3,8 +3,12 @@ const Contact = () => {
     <>
       <footer className=" text-white py-8" id="contact">
         <div className="container mx-auto text-center">
-          <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
-          <p className="mb-6">Have a project in mind? Let's collaborate!</p>
+          <h2 className="text-2xl font-semibold mb-4 text-blue-500">
+            Get in Touch
+          </h2>
+          <p className="mb-6 text-blue-500">
+            Have a project in mind? Let's collaborate!
+          </p>
           <a
             href="mailto:glorynwaekpe@gmail.com"
             className="text-blue-500 hover:text-blue-300 transition duration-300"
@@ -37,6 +41,11 @@ const Contact = () => {
               Twitter
             </a>
           </div>
+          <p className="text-blue-500 mt-4">
+            <a href="/" target="_blank">
+              Back to Home Page
+            </a>
+          </p>
         </div>
       </footer>
     </>

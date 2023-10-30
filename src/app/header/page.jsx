@@ -54,7 +54,7 @@ const header = () => {
                 />
               </span>
             </h1>
-            <div className="text-white">
+            <div className=" text-gray-400">
               I'm a junior front-end developer, technical writer, and an
               opensource enthusiast
             </div>

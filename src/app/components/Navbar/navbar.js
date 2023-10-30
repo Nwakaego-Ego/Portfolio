@@ -11,13 +11,16 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="navbar ">
+      <nav className="navbar mb-16  lg:p-2 lg:mb-1 ">
         <div className="container mx-auto flex justify-between items-center">
-          <a href="/" className="text-xl font-bold lg:text-[35px]">
+          <a
+            href="/"
+            className="text-xl font-bold lg:text-[35px] p-8 lg:p-1 text-gray-400"
+          >
             Ego
           </a>
 
-          <div className="md:hidden">
+          <div className="md:hidden p-8 lg:p-1 ">
             <button className="menu-button" onClick={toggleMenu}>
               <div class="line"></div>
               <div class="line"></div>
@@ -40,15 +43,15 @@ const Navbar = () => {
             {/* <Link href="/about" className="lg:px-4 lg:py-2">
               About
             </Link> */}
-            <a href="#about" className="lg:px-4 lg:py-2">
+            <a href="#about" className="lg:px-4 lg:py-2 text-gray-400">
               {" "}
               About
             </a>
-            <a href="#project" className="lg:px-4 lg:py-2">
+            <a href="#project" className="lg:px-4 lg:py-2 text-gray-400">
               {" "}
               Projects
             </a>
-            <a href="#contact" className="lg:px-4 lg:py-2">
+            <a href="#contact" className="lg:px-4 lg:py-2 text-gray-400">
               {" "}
               Contact
             </a>

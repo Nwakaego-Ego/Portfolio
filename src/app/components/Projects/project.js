@@ -4,17 +4,17 @@ const projects = () => {
   const tasks = [
     {
       image: "/note_.svg",
-      href: "https://stunning-faloodeh-9a1a26.netlify.app/",
+      href: "https://luminous-travesseiro-93a1d7.netlify.app/",
       task: "Note App",
     },
     {
       image: "/weath.svg",
-      href: "https://stunning-faloodeh-9a1a26.netlify.app/",
+      href: "https://focused-lamport-53a4d4.netlify.app/",
       task: "Weather App",
     },
     {
       image: "/blog.svg",
-      href: "https://stunning-faloodeh-9a1a26.netlify.app/",
+      href: "https://ego.hashnode.dev/?source=top_nav_blog_home",
       task: "Blog Post",
     },
     {
@@ -32,14 +32,14 @@ const projects = () => {
       <div className="border p-10 rounded-lg shadow-lg ">
         <div className="grid grid-cols-2 gap-4">
           {tasks.map((task, index) => (
-            <div key={index} className="card text-center ">
+            <div key={index} className="card text-center text-gray-400 ">
               <img
                 src={task.image}
                 alt={`project ${index}`}
                 className="image"
               />
-              <a href={task.href}>
-                <span>Visit Site</span>
+              <a href={task.href} target="_blank">
+                Visit Site
               </a>
               <p className="text-center mt-2 font-semibold">{task.task}</p>
             </div>

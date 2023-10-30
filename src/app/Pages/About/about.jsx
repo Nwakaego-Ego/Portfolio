@@ -24,11 +24,11 @@ const About = () => {
           </div>
         </div>
         <div>
-          <p className="mt-10 lg:mt-1 text-gray-400 ml-5 text-center lg:text-left">
+          <p className="mt-10  lg:mt-1 text-gray-400 ml-5 lg:ml-32 text-center lg:text-left">
             About Me
           </p>
           <div className=" lg:py-6 lg:px-6  ">
-            <p className="flex leading-6  text-gray-400 mt-5  lg:w-80 lg:pb-6  lg:text-center lg:items-center lg:justify-center">
+            <p className="flex leading-6  text-gray-400 mt-5  lg:w-80 lg:pb-6  ">
               I'm a junior front-end developer and writer, blending code and
               words to create compelling digital experiences. With a passion for
               storytelling, I bring creativity and functionality to the web. My
