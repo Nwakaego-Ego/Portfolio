@@ -25,7 +25,10 @@ const projects = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center h-screen mt-20 mb-20">
+    <div
+      className="flex justify-center items-center h-screen mt-20 mb-20"
+      id="project"
+    >
       <div className="border p-10 rounded-lg shadow-lg ">
         <div className="grid grid-cols-2 gap-4">
           {tasks.map((task, index) => (

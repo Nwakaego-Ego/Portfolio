@@ -6,10 +6,10 @@ import Navbar from "../components/Navbar/navbar";
 import Skills from "../components/skills";
 import Education from "../components/education";
 import Certifications from "../components/certifications";
-import Projects from "../components/Projects/page";
+import Projects from "../components/Projects/project";
 import { FaSun, FaMoon } from "react-icons/fa";
-import About from "../Pages/About/Page";
-import Contact from "../Pages/Contact/page";
+import About from "../Pages/About/about";
+import Contact from "../Pages/Contact/contact";
 
 const header = () => {
   const [isDarkMode, setDarkMode] = useState(false);

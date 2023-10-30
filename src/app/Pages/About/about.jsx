@@ -3,7 +3,10 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <div className="skills relative lg:flex lg:justify-between  lg:mr-10  lg:px-40    ">
+      <div
+        className="skills relative lg:flex lg:justify-between  lg:mr-10  lg:px-40"
+        id="about"
+      >
         <div className="">
           <div
             className="flex justify-center items-center relative 

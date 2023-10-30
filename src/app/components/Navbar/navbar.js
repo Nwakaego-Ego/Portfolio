@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 import { useState } from "react";
 import "./navbar.css";
 
@@ -13,9 +13,9 @@ const Navbar = () => {
     <div>
       <nav className="navbar ">
         <div className="container mx-auto flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold lg:text-[35px]">
+          <a href="/" className="text-xl font-bold lg:text-[35px]">
             Ego
-          </Link>
+          </a>
 
           <div className="md:hidden">
             <button className="menu-button" onClick={toggleMenu}>
@@ -40,13 +40,16 @@ const Navbar = () => {
             {/* <Link href="/about" className="lg:px-4 lg:py-2">
               About
             </Link> */}
-            <a href="/About" className="lg:px-4 lg:py-2">
-              About{" "}
+            <a href="#about" className="lg:px-4 lg:py-2">
+              {" "}
+              About
             </a>
-            <a href="/project" className="lg:px-4 lg:py-2">
+            <a href="#project" className="lg:px-4 lg:py-2">
+              {" "}
               Projects
             </a>
-            <a href="/Contact" className="lg:px-4 lg:py-2">
+            <a href="#contact" className="lg:px-4 lg:py-2">
+              {" "}
               Contact
             </a>
           </div>
