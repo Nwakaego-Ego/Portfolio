@@ -10,6 +10,8 @@ import Projects from "../components/Projects/project";
 import { FaSun, FaMoon } from "react-icons/fa";
 import About from "../Pages/About/about";
 import Contact from "../Pages/Contact/contact";
+import ListDropDown from "../components/ListDropDown/listDropDown";
+import { dropDownData } from "@/data";
 
 const header = () => {
   const [isDarkMode, setDarkMode] = useState(false);
@@ -99,8 +101,17 @@ const header = () => {
       </div>
       <About />
       <div className="flex flex-col items-center lg:flex-row justify-center mx-auto  lg:space-x-4   lg:ml-0">
-        <Skills /> <Education />
-        <Certifications />
+        {/* <Skills /> <Education />
+        <Certifications /> */}
+        {dropDownData.map((item) => {
+          return (
+            <ListDropDown
+              key={item.id}
+              btnText={item.text}
+              lists={item.lists}
+            />
+          );
+        })}
       </div>
       <Projects />
       <Contact />

@@ -10,7 +10,7 @@
 .card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
-  border: 1px solid #010c48;
+  border: 1px solid transparent;
 }
 
 .image {

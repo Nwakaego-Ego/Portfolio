@@ -10,7 +10,7 @@ const About = () => {
         <div className="">
           <div
             className="flex justify-center items-center relative 
-       mx-auto text-center  overflow-hidden top-4"
+       mx-auto text-center  overflow-hidden top-2"
           >
             <Image
               src="/bulb.jfif"
@@ -19,7 +19,7 @@ const About = () => {
               height={300}
               layout="fit"
               objectFit="cover"
-              className="mx-auto rounded mt-10"
+              className="mx-auto rounded "
             />
           </div>
         </div>
