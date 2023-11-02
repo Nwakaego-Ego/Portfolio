@@ -26,7 +26,7 @@ const projects = () => {
 
   return (
     <div
-      className="flex justify-center items-center h-screen mt-20 mb-20"
+      className="flex justify-center items-center h-screen  mb-20 p-10 lg:p-1 "
       id="project"
     >
       <div className="border p-10 rounded-lg shadow-lg ">
