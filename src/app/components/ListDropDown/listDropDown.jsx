@@ -9,10 +9,10 @@ const listDropDown = ({ btnText, lists }) => {
 
   return (
     <>
-      <div className="w-52 h-52 ">
+      <div className="w-52 h-[180px] ">
         <button
           onClick={toggleDropDown}
-          className="w-40 h-12 block lg:inline-block bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg mb-10"
+          className="w-40 h-12 block lg:inline-block bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white font-bold py-2 px-4 rounded-lg mb-2"
         >
           {btnText}
         </button>

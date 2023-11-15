@@ -8,9 +8,9 @@ const projects = () => {
       task: "Note App",
     },
     {
-      image: "/weath.svg",
-      href: "https://focused-lamport-53a4d4.netlify.app/",
-      task: "Weather App",
+      image: "/todo.svg",
+      href: "https://to-do-iota-nine.vercel.app/",
+      task: "To do App",
     },
     {
       image: "/blog.svg",
@@ -18,9 +18,9 @@ const projects = () => {
       task: "Blog Post",
     },
     {
-      image: "/note_.svg",
-      href: "https://stunning-faloodeh-9a1a26.netlify.app/",
-      task: "Note App",
+      image: "/cart.svg",
+      href: "https://shopping-cart-three-henna.vercel.app/",
+      task: "Shopping App",
     },
   ];
 
