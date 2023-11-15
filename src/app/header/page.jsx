@@ -3,15 +3,13 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Navbar from "../components/Navbar/navbar";
-import Skills from "../components/skills";
-import Education from "../components/education";
-import Certifications from "../components/certifications";
 import Projects from "../components/Projects/project";
 import { FaSun, FaMoon } from "react-icons/fa";
 import About from "../Pages/About/about";
 import Contact from "../Pages/Contact/contact";
 import ListDropDown from "../components/ListDropDown/listDropDown";
 import { dropDownData } from "@/data";
+import MiniSeries from "../components/MiniSeries/miniSeries";
 
 const header = () => {
   const [isDarkMode, setDarkMode] = useState(false);
@@ -114,6 +112,7 @@ const header = () => {
         })}
       </div>
       <Projects />
+      <MiniSeries />
       <Contact />
     </main>
   );

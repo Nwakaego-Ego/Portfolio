@@ -1,0 +1,22 @@
+.mini-container {
+  height: 180px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom right, #3490dc, #6f42c1, #e83e8c);
+  padding: 20px 30px;
+  box-shadow: 15px 15px 7px rgba(0, 0, 0, 0.25),
+    10px 8px 40px rgba(0, 0, 0, 0.25), inset 3px 3px 6px rgba(0, 0, 0, 0.5),
+    inset 3px 3px 10px rgba(255, 255, 255, 0.2),
+    inset -3px -3px 8px rgba(0, 0, 0, 0.75);
+
+  margin: 20px;
+  width: calc(25% - 40px);
+}
+
+.flex-wrap {
+  margin: -20px;
+}
+
+.img-miniSeries {
+  width: 150px;
+  height: 100px;
+}
