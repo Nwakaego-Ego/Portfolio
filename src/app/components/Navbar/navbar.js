@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="container mx-auto flex justify-between items-center">
           <a
             href="/"
-            className="text-xl font-bold lg:text-[35px] p-8 lg:p-1 text-gray-400"
+            className="text-xl  font-bold lg:text-[35px] p-8 lg:p-1 text-gray-400"
           >
             Ego
           </a>
@@ -31,7 +31,7 @@ const Navbar = () => {
           <div
             className={`md:flex space-x-4 ${
               isOpen ? "block" : "hidden"
-            } m-10 lg:flex lg:space-x-4 `}
+            } m-10 lg:flex lg:space-x-4 text-sm lg:text-xl `}
           >
             {/* <div onClick={toggleDarkMode} className=" lg:px-4 lg:py-2">
               {currentMode === "dark" ? (
