@@ -8,20 +8,19 @@ const projects = () => {
       task: "To do App",
     },
     {
-      image: "/note_.svg",
-      href: "https://luminous-travesseiro-93a1d7.netlify.app/",
-      task: "Note App",
+      image: "/cart.svg",
+      href: "https://shopping-cart-three-henna.vercel.app/",
+      task: "Shopping App",
     },
-
     {
       image: "/blog.svg",
       href: "https://ego.hashnode.dev/?source=top_nav_blog_home",
       task: "Blog Post",
     },
     {
-      image: "/cart.svg",
-      href: "https://shopping-cart-three-henna.vercel.app/",
-      task: "Shopping App",
+      image: "/note_.svg",
+      href: "https://luminous-travesseiro-93a1d7.netlify.app/",
+      task: "Note App",
     },
   ];
 
