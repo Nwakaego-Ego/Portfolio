@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="container mx-auto flex justify-between items-center">
           <a
             href="/"
-            className="text-xl  font-bold lg:text-[35px] p-8 lg:p-1 text-gray-400"
+            className=" ego text-xl  font-bold lg:text-[35px] p-8 lg:p-1 text-gray-400"
           >
             Ego
           </a>

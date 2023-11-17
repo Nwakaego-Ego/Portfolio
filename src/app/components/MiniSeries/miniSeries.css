@@ -12,6 +12,10 @@
   width: calc(25% - 40px);
 }
 
+.mini-container:hover {
+  background: linear-gradient(to bottom right, #e83e8c, #6f42c1, #3490dc);
+}
+
 .flex-wrap {
   margin: -20px;
 }

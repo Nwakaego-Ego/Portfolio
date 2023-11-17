@@ -1,4 +1,5 @@
 import Image from "next/image";
+import "./about.css";
 
 const About = () => {
   return (
@@ -19,7 +20,7 @@ const About = () => {
               height={300}
               layout="fit"
               objectFit="cover"
-              className="mx-auto rounded "
+              className="mx-auto rounded img-about"
             />
           </div>
         </div>
