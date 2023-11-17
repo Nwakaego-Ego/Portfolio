@@ -24,3 +24,16 @@
   width: 150px;
   height: 100px;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .mini-container {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .mini-container {
+    width: calc(100% - 40px);
+  }
+}
