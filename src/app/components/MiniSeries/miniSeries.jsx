@@ -3,14 +3,14 @@ import "./miniSeries.css";
 const miniSeries = () => {
   const series = [
     {
-      image: "/todo.svg",
-      href: "https://to-do-iota-nine.vercel.app/",
-      task: "To do App",
+      image: "/input.svg",
+      href: "https://input-message.vercel.app/",
+      task: "Message",
     },
     {
-      image: "/note_.svg",
-      href: "https://luminous-travesseiro-93a1d7.netlify.app/",
-      task: "Note App",
+      image: "/thought.svg",
+      href: "https://quote-theta-eight.vercel.app/",
+      task: "Quote",
     },
 
     {
