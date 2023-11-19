@@ -14,9 +14,9 @@ const miniSeries = () => {
     },
 
     {
-      image: "/blog.svg",
-      href: "https://ego.hashnode.dev/?source=top_nav_blog_home",
-      task: "Blog Post",
+      image: "/form.svg",
+      href: "https://form-iota-sooty.vercel.app/",
+      task: "Form",
     },
     {
       image: "/cart.svg",
