@@ -3,6 +3,12 @@ import "./project.css";
 const projects = () => {
   const tasks = [
     {
+      image: "/note_.svg",
+      // href: "https://luminous-travesseiro-93a1d7.netlify.app/",
+      href: "https://note-two-pink.vercel.app/",
+      task: "Note App",
+    },
+    {
       image: "/todo.svg",
       href: "https://to-do-iota-nine.vercel.app/",
       task: "To do App",
@@ -16,11 +22,6 @@ const projects = () => {
       image: "/blog.svg",
       href: "https://ego.hashnode.dev/?source=top_nav_blog_home",
       task: "Blog Post",
-    },
-    {
-      image: "/note_.svg",
-      href: "https://luminous-travesseiro-93a1d7.netlify.app/",
-      task: "Note App",
     },
   ];
 

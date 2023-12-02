@@ -2,7 +2,7 @@ export const dropDownData = [
   {
     id: 1,
     text: "Skill",
-    lists: ["HTML", "CSS", "JAVASCRIPT", "REACT", "NEXTJS", "TAILWIND"],
+    lists: ["JAVASCRIPT", "REACT", "NEXTJS", "TAILWIND", "Firebase"],
   },
   {
     id: 2,

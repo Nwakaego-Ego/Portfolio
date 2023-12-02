@@ -19,14 +19,14 @@ const miniSeries = () => {
       task: "Form",
     },
     {
-      image: "/cart.svg",
-      href: "https://shopping-cart-three-henna.vercel.app/",
-      task: "Shopping App",
+      image: "/calculator.svg",
+      href: "https://intereactive-calculator.vercel.app/",
+      task: "Calculator",
     },
     {
-      image: "/todo.svg",
-      href: "https://to-do-iota-nine.vercel.app/",
-      task: "To do App",
+      image: "/mastercard.svg",
+      href: "https://mastercard-five.vercel.app/",
+      task: "Master Card",
     },
     {
       image: "/note_.svg",
