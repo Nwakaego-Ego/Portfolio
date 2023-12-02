@@ -29,9 +29,9 @@ const miniSeries = () => {
       task: "Master Card",
     },
     {
-      image: "/note_.svg",
-      href: "https://luminous-travesseiro-93a1d7.netlify.app/",
-      task: "Note App",
+      image: "/dynamic_cal.svg",
+      href: "https://dynamic-calculator-xi.vercel.app/",
+      task: "Dynamic calculator",
     },
 
     {
