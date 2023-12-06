@@ -19,9 +19,9 @@ const projects = () => {
       task: "Shopping App",
     },
     {
-      image: "/blog.svg",
-      href: "https://ego.hashnode.dev/?source=top_nav_blog_home",
-      task: "Blog Post",
+      image: "/card.svg",
+      href: "https://memory-game-mu-sable.vercel.app/",
+      task: "Card Game",
     },
   ];
 
