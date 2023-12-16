@@ -3,9 +3,10 @@ import "./miniSeries.css";
 const miniSeries = () => {
   const series = [
     {
-      image: "/input.svg",
-      href: "https://input-message.vercel.app/",
-      task: "Message",
+      image: "/todo.svg",
+      href: "https://to-do-iota-nine.vercel.app/",
+      // href: "https://input-message.vercel.app/",
+      task: "Todo App",
     },
     {
       image: "/thought.svg",
@@ -35,9 +36,9 @@ const miniSeries = () => {
     },
 
     {
-      image: "/blog.svg",
-      href: "https://ego.hashnode.dev/?source=top_nav_blog_home",
-      task: "Blog Post",
+      image: "/input.svg",
+      href: "https://input-message.vercel.app/",
+      task: "Message",
     },
     {
       image: "/cart.svg",

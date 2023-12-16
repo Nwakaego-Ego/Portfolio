@@ -9,8 +9,9 @@ const projects = () => {
       task: "Note App",
     },
     {
-      image: "/todo.svg",
-      href: "https://to-do-iota-nine.vercel.app/",
+      image: "/wordle.svg",
+      // href: "https://to-do-iota-nine.vercel.app/",
+      href: "https://wordle-tkp7bguyo-egos-projects.vercel.app/",
       task: "To do App",
     },
     {
