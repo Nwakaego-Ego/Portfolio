@@ -10,9 +10,8 @@ const projects = () => {
     },
     {
       image: "/wordle.svg",
-      // href: "https://to-do-iota-nine.vercel.app/",
-      href: "https://wordle-tkp7bguyo-egos-projects.vercel.app/",
-      task: "To do App",
+      href: "https://wordle-gamma-nine.vercel.app/",
+      task: "Wordle Game",
     },
     {
       image: "/cart.svg",
